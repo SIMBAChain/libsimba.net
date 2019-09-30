@@ -1,14 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ApplicationIcon />
     <Win32Resource />
     <Company>SIMBAChain Inc.</Company>
-    <Product>libnet</Product>
-    <PackageProjectUrl>https://simbachain.github.io/libnet/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/simbachain/libnet/</RepositoryUrl>
+    <Product>libSimba.Net</Product>
+    <PackageProjectUrl>https://simbachain.github.io/libsimba.net/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/simbachain/libsimba.net/</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>SIMBAChain Inc.</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <tags>Simbachain Blockchain Ethereum Stellar</tags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +22,13 @@
     <PackageReference Include="Nethereum.Signer" Version="3.4.0" />
     <PackageReference Include="Nethereum.Web3" Version="3.4.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
