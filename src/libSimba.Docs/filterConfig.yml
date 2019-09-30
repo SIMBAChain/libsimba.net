@@ -1,0 +1,7 @@
+﻿apiRules:
+- exclude:
+    uidRegex: ^libSimba\.Tests
+    type: Namespace
+- exclude:
+    uidRegex: ^libSimba\.Example
+    type: Namespace

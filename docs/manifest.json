@@ -1,0 +1,500 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Kieran David Evans/Code/libSimba.net/src/libSimba.Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "9Twm2D7Mv42i9bdn8ELVmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Exceptions.HttpException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Exceptions.HttpException.html",
+          "hash": "esHUGwhFo3SBoaGCHq9cPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Exceptions.html",
+          "hash": "y0ZH0VuSPikF4nsMN//h1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Balance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Balance.html",
+          "hash": "5oS85pKpJ5MYuujiRKP/Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.BundleManifest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.BundleManifest.html",
+          "hash": "C/8DAnVVLuVJudgrkF8Zcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.FileData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.FileData.html",
+          "hash": "R46mRSQ3X0ZoJjA8+xX7Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.FileManifest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.FileManifest.html",
+          "hash": "jqVuC4JxcVXAJYVWUteXyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Funds.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Funds.html",
+          "hash": "QtLiNuBFgTR+QoOarlgA3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.PagedResponse-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.PagedResponse-1.html",
+          "hash": "x1KdAzlP/M2fv7XAvzdmXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Swagger.ApplicationMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Swagger.ApplicationMetadata.html",
+          "hash": "Fh+MDfeKDfWG6LQBNtAp4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Swagger.Info.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Swagger.Info.html",
+          "hash": "k50mCr/jaOhlp8A46701zA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Swagger.Method.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Swagger.Method.html",
+          "hash": "4o55qVQcZqE3XAy1d8HNHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Swagger.Parameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Swagger.Parameter.html",
+          "hash": "/gj1Pc793iM0xs8y7Ed4tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Swagger.Swagger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Swagger.Swagger.html",
+          "hash": "QQ5xIqqA3PmLgAmLEaAy1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Swagger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Swagger.html",
+          "hash": "kzOvorB06J0UCmuPW1Zw9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.ErrorDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.ErrorDetails.html",
+          "hash": "5jN3iaNcYL2j/G4w0MO5wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.Payload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.Payload.html",
+          "hash": "Dzj8tfEnAnFCKTj+PoCodw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.RawPayload.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.RawPayload.html",
+          "hash": "k7xNU+XuGmw1XBNONoIbGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.Receipt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.Receipt.html",
+          "hash": "qrid4KIZx8ZfWsxex4uDBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.Serializable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.Serializable.html",
+          "hash": "QP+ugqNtLLrb84PwAAN0FA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.Transaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.Transaction.html",
+          "hash": "V8aBKLG/x7PYWMHtrsiMAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.TransactionStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.TransactionStatus.html",
+          "hash": "i37NnYRnU0MegtcOElioMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.TransactionSubmitted.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.TransactionSubmitted.html",
+          "hash": "K7dQ1M3Y46Y/0AgZMz8HGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.Transaction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.Transaction.html",
+          "hash": "LTc6Tu4ExKt2UNyrP1Ts0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Models.html",
+          "hash": "F4bQQr4pc+7ghd7NBnNJtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Simba.SimbaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Simba.SimbaBase.html",
+          "hash": "XKoSpvxNDOxEPWkRpJ07JA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Simba.SimbaChain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Simba.SimbaChain.html",
+          "hash": "kYMvfOKI0dELCTntW4p0aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Simba.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Simba.html",
+          "hash": "VgXNkdsZn2EKhWSlXwXi8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Wallet.FileWallet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Wallet.FileWallet.html",
+          "hash": "+EbEyvRasAU/1Vg3zsbujg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Wallet.ISigningConfirmation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Wallet.ISigningConfirmation.html",
+          "hash": "heU7SbH1vq+xA2xCPSGzXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Wallet.WalletBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Wallet.WalletBase.html",
+          "hash": "RoQi+XkbSQDWEgLIFT5cqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/libSimba.Net.Wallet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/libSimba.Net.Wallet.html",
+          "hash": "87vK+YQMOpRFrOJyh1LOxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "ZbmRnJDxaIGaehM93l94/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting_started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting_started.html",
+          "hash": "RaogDo9GYLMPeh/K34HPkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "r4do5k7h5bpn1qtuj+VU7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/working_with_files.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/working_with_files.html",
+          "hash": "sWGqnnK2JIoDfVN5JKex5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "sYsrktXozy+/pdufQHN1MA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 31,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

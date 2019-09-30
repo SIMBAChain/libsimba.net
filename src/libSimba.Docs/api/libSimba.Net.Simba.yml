@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Simba
+  commentId: N:libSimba.Net.Simba
+  id: libSimba.Net.Simba
+  children:
+  - libSimba.Net.Simba.SimbaBase
+  - libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: libSimba.Net.Simba
+  nameWithType: libSimba.Net.Simba
+  fullName: libSimba.Net.Simba
+  type: Namespace
+  assemblies:
+  - libSimba.Net
+references:
+- uid: libSimba.Net.Simba.SimbaBase
+  commentId: T:libSimba.Net.Simba.SimbaBase
+  parent: libSimba.Net.Simba
+  name: SimbaBase
+  nameWithType: SimbaBase
+  fullName: libSimba.Net.Simba.SimbaBase
+- uid: libSimba.Net.Simba.SimbaChain
+  commentId: T:libSimba.Net.Simba.SimbaChain
+  name: SimbaChain
+  nameWithType: SimbaChain
+  fullName: libSimba.Net.Simba.SimbaChain
+- uid: libSimba.Net.Simba
+  commentId: N:libSimba.Net.Simba
+  name: libSimba.Net.Simba
+  nameWithType: libSimba.Net.Simba
+  fullName: libSimba.Net.Simba

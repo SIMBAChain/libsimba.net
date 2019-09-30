@@ -1,0 +1,1323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="simbachat.swagger.json" xml:space="preserve">
+    <value>{
+  "swagger": "2.0",
+  "info": {
+    "title": "SimbaChainChain API V1",
+    "description": "A description of this API goes here.",
+    "termsOfService": "https://www.simbachain.com/policies/terms/",
+    "contact": {
+      "email": "contact@simbachain.com"
+    },
+    "license": {
+      "name": "",
+      "url": "https://www.simbachain.com/policies/licence"
+    },
+    "version": "v1",
+    "x-simba-attrs": {
+      "api_name": "libSimbaChain-SimbaChainChat-Quorum",
+      "faucet": null,
+      "methods": {
+        "Message": {
+          "parameters": {
+            "assetId": {
+              "title": "assetId",
+              "type": "string"
+            }
+          }
+        },
+        "createRoom": {
+          "parameters": {
+            "assetId": {
+              "title": "assetId",
+              "type": "string"
+            },
+            "createdBy": {
+              "title": "createdBy",
+              "type": "string"
+            },
+            "name": {
+              "title": "name",
+              "type": "string"
+            }
+          }
+        },
+        "sendMessage": {
+          "parameters": {
+            "_files": {
+              "title": "file",
+              "type": "file"
+            },
+            "assetId": {
+              "title": "assetId",
+              "type": "string"
+            },
+            "chatRoom": {
+              "title": "chatRoom",
+              "type": "string"
+            },
+            "Message": {
+              "title": "Message",
+              "type": "string"
+            },
+            "sentBy": {
+              "title": "sentBy",
+              "type": "string"
+            }
+          }
+        }
+      },
+      "name": "libSimbaChain-SimbaChainChat-Quorum",
+      "network": "Quorum",
+      "network_type": "quorum",
+      "poa": true,
+      "simba_faucet": false,
+      "type": "simbachain.com"
+    }
+  },
+  "host": "api.simbachain.com",
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/v1/libSimbaChain-SimbaChainChat-Quorum",
+  "consumes": [
+    "application/json",
+    "application/vnd.api+json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "api_key": {
+      "in": "header",
+      "name": "APIKEY",
+      "type": "apiKey"
+    }
+  },
+  "security": [
+    {
+      "api_key": [
+
+      ]
+    }
+  ],
+  "paths": {
+    "/createRoom/": {
+      "get": {
+        "operationId": "createRoom_list",
+        "summary": "List or search transactions for \"createRoom\"",
+        "description": "List or search transactions for \"createRoom\"",
+        "parameters": [
+          {
+            "name": "name_exact",
+            "in": "query",
+            "description": "case insensitive exact match on name",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "name_contains",
+            "in": "query",
+            "description": "name contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_exact",
+            "in": "query",
+            "description": "case insensitive exact match on assetId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_contains",
+            "in": "query",
+            "description": "assetId contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "createdBy_exact",
+            "in": "query",
+            "description": "case insensitive exact match on createdBy",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "createdBy_contains",
+            "in": "query",
+            "description": "createdBy contains string",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to createRoom",
+            "schema": {
+              "title": "Transactions",
+              "description": "Returned Transactions",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Transaction"
+              }
+            }
+          }
+        },
+        "tags": [
+          "contract_methods"
+        ]
+      },
+      "post": {
+        "operationId": "createRoom",
+        "summary": "Execute the \"createRoom\" method on the smart contract",
+        "description": "Execute the \"createRoom\" method on the smart contract. The 6 file limit is only when using Swagger. We will have to update to Swagger 3 to support file arrays.",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "REMOTEUSER",
+            "in": "header",
+            "description": "Remote User ID",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "APIKEY",
+            "in": "header",
+            "description": "API Key",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "assetId",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "createdBy",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to createRoom",
+            "schema": {
+              "$ref": "#/definitions/Transaction"
+            }
+          }
+        },
+        "consumes": [
+          "multipart/form-data",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "contract_methods"
+        ]
+      }
+    },
+    "/Message/": {
+      "get": {
+        "operationId": "Message_list",
+        "summary": "List or search transactions for \"Message\"",
+        "description": "List or search transactions for \"Message\"",
+        "parameters": [
+          {
+            "name": "assetId_exact",
+            "in": "query",
+            "description": "case insensitive exact match on assetId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_contains",
+            "in": "query",
+            "description": "assetId contains string",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to Message",
+            "schema": {
+              "title": "Transactions",
+              "description": "Returned Transactions",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Transaction"
+              }
+            }
+          }
+        },
+        "tags": [
+          "contract_methods"
+        ]
+      },
+      "post": {
+        "operationId": "Message",
+        "summary": "Execute the \"Message\" method on the smart contract",
+        "description": "Execute the \"Message\" method on the smart contract. The 6 file limit is only when using Swagger. We will have to update to Swagger 3 to support file arrays.",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "REMOTEUSER",
+            "in": "header",
+            "description": "Remote User ID",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "APIKEY",
+            "in": "header",
+            "description": "API Key",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to Message",
+            "schema": {
+              "$ref": "#/definitions/Transaction"
+            }
+          }
+        },
+        "consumes": [
+          "multipart/form-data",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "contract_methods"
+        ]
+      }
+    },
+    "/sendMessage/": {
+      "get": {
+        "operationId": "sendMessage_list",
+        "summary": "List or search transactions for \"sendMessage\"",
+        "description": "List or search transactions for \"sendMessage\"",
+        "parameters": [
+          {
+            "name": "sentBy_exact",
+            "in": "query",
+            "description": "case insensitive exact match on sentBy",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sentBy_contains",
+            "in": "query",
+            "description": "sentBy contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_exact",
+            "in": "query",
+            "description": "case insensitive exact match on assetId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_contains",
+            "in": "query",
+            "description": "assetId contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Message_exact",
+            "in": "query",
+            "description": "case insensitive exact match on Message",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Message_contains",
+            "in": "query",
+            "description": "Message contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "chatRoom_exact",
+            "in": "query",
+            "description": "case insensitive exact match on chatRoom",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "chatRoom_contains",
+            "in": "query",
+            "description": "chatRoom contains string",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to sendMessage",
+            "schema": {
+              "title": "Transactions",
+              "description": "Returned Transactions",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Transaction"
+              }
+            }
+          }
+        },
+        "tags": [
+          "contract_methods"
+        ]
+      },
+      "post": {
+        "operationId": "sendMessage",
+        "summary": "Execute the \"sendMessage\" method on the smart contract",
+        "description": "Execute the \"sendMessage\" method on the smart contract. The 6 file limit is only when using Swagger. We will have to update to Swagger 3 to support file arrays.",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "REMOTEUSER",
+            "in": "header",
+            "description": "Remote User ID",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "APIKEY",
+            "in": "header",
+            "description": "API Key",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sentBy",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "assetId",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Message",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "chatRoom",
+            "in": "formData",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "_bundleHash",
+            "in": "formData",
+            "description": "Bundle Hash (optional) - if set, files are ignored",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "file[0]",
+            "in": "formData",
+            "description": "The files",
+            "type": "file"
+          },
+          {
+            "name": "file[1]",
+            "in": "formData",
+            "description": "The files",
+            "type": "file"
+          },
+          {
+            "name": "file[2]",
+            "in": "formData",
+            "description": "The files",
+            "type": "file"
+          },
+          {
+            "name": "file[3]",
+            "in": "formData",
+            "description": "The files",
+            "type": "file"
+          },
+          {
+            "name": "file[4]",
+            "in": "formData",
+            "description": "The files",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to sendMessage",
+            "schema": {
+              "$ref": "#/definitions/Transaction"
+            }
+          }
+        },
+        "consumes": [
+          "multipart/form-data",
+          "application/x-www-form-urlencoded"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "tags": [
+          "contract_methods"
+        ]
+      }
+    },
+    "/transaction/": {
+      "get": {
+        "operationId": "transaction_list",
+        "summary": "List or search transactions",
+        "description": "List or search transactions",
+        "parameters": [
+          {
+            "name": "method",
+            "in": "query",
+            "description": "The method name or ID. \"`__any__`\" will only show txns on methods",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "noContractTxn",
+            "in": "query",
+            "description": "Don't show the contract creation txn. `1` to hide.",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "name_exact",
+            "in": "query",
+            "description": "case insensitive exact match on name",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "name_contains",
+            "in": "query",
+            "description": "name contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_exact",
+            "in": "query",
+            "description": "case insensitive exact match on assetId",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "assetId_contains",
+            "in": "query",
+            "description": "assetId contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "createdBy_exact",
+            "in": "query",
+            "description": "case insensitive exact match on createdBy",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "createdBy_contains",
+            "in": "query",
+            "description": "createdBy contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sentBy_exact",
+            "in": "query",
+            "description": "case insensitive exact match on sentBy",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "sentBy_contains",
+            "in": "query",
+            "description": "sentBy contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Message_exact",
+            "in": "query",
+            "description": "case insensitive exact match on Message",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "Message_contains",
+            "in": "query",
+            "description": "Message contains string",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "chatRoom_exact",
+            "in": "query",
+            "description": "case insensitive exact match on chatRoom",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "chatRoom_contains",
+            "in": "query",
+            "description": "chatRoom contains string",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to search",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Transaction"
+              }
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/transaction/{txn_id}/": {
+      "get": {
+        "operationId": "transaction_read",
+        "summary": "Retrieve a transaction",
+        "description": "Retrieve a transaction",
+        "parameters": [
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to search",
+            "schema": {
+              "$ref": "#/definitions/Transaction"
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      },
+      "post": {
+        "operationId": "transaction_create",
+        "summary": "Submit a signed transaction",
+        "description": "Submit a signed transaction",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "title": "SubmitTransaction",
+              "required": [
+                "payload"
+              ],
+              "type": "object",
+              "properties": {
+                "payload": {
+                  "title": "payload",
+                  "description": "The signed transaction",
+                  "type": "object"
+                }
+              }
+            }
+          },
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to submit transaction",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "default": "submitted"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/balance/{account}/": {
+      "get": {
+        "operationId": "balance_get",
+        "summary": "Retrieve account balance",
+        "description": "Retrieve account balance",
+        "parameters": [
+          {
+            "name": "account",
+            "in": "path",
+            "description": "The Account",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to search",
+            "schema": {
+              "title": "Balance",
+              "type": "object",
+              "properties": {
+                "amount": {
+                  "title": "amount",
+                  "description": "The balance",
+                  "type": "number"
+                },
+                "currency": {
+                  "title": "currency",
+                  "description": "The currency",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "balance"
+        ]
+      },
+      "post": {
+        "operationId": "balance_post",
+        "summary": "Request funding",
+        "description": "Request funding",
+        "parameters": [
+          {
+            "name": "account",
+            "in": "path",
+            "description": "account",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "RequestBalance",
+            "in": "body",
+            "schema": {
+              "title": "RequestBalance",
+              "required": [
+                "value",
+                "currency"
+              ],
+              "type": "object",
+              "properties": {
+                "currency": {
+                  "title": "currency",
+                  "description": "currency",
+                  "type": "string"
+                },
+                "value": {
+                  "title": "value",
+                  "description": "value",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Response to balance request",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "txnId": {
+                  "title": "txnId",
+                  "description": "Transaction hash of the funding txn",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "balance"
+        ]
+      }
+    },
+    "/transaction/{txn_id}/bundle/": {
+      "get": {
+        "operationId": "transaction_bundle",
+        "summary": "Retrieve the asset for a transaction",
+        "description": "Retrieve the asset for a transaction",
+        "parameters": [
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The file containing the asset data",
+            "schema": {
+              "description": "The file containing the asset data",
+              "type": "object",
+              "properties": {
+                "manifest": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "data": {
+                        "title": "data",
+                        "type": "string"
+                      },
+                      "encoding": {
+                        "title": "encoding",
+                        "type": "string"
+                      },
+                      "mimetype": {
+                        "title": "mimetype",
+                        "type": "string"
+                      },
+                      "name": {
+                        "title": "name",
+                        "type": "string"
+                      },
+                      "size": {
+                        "title": "size",
+                        "type": "integer"
+                      }
+                    }
+                  }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+
+                  }
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/transaction/{txn_id}/bundle_raw/": {
+      "get": {
+        "operationId": "transaction_bundle_raw",
+        "summary": "Retrieve the asset for a transaction",
+        "description": "Retrieve the asset for a transaction",
+        "parameters": [
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The file containing the asset data",
+            "schema": {
+              "description": "The file containing the asset data",
+              "type": "file"
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/transaction/{txn_id}/file/{file_index}/": {
+      "get": {
+        "operationId": "transaction_bundle_file",
+        "summary": "Retrieve the file from the bundle for a transaction",
+        "description": "Retrieve the asset for a transaction",
+        "parameters": [
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "file_index",
+            "in": "path",
+            "description": "The files index in the bundle",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The file containing the asset data",
+            "schema": {
+              "description": "The file containing the asset data",
+              "type": "file"
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/transaction/{txn_id}/fileByName/{file_name}/": {
+      "get": {
+        "operationId": "transaction_bundle_file_by_name",
+        "summary": "Retrieve the file from the bundle for a transaction",
+        "description": "Retrieve the asset for a transaction",
+        "parameters": [
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "file_name",
+            "in": "path",
+            "description": "The files name in the bundle",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The file containing the asset data",
+            "schema": {
+              "description": "The file containing the asset data",
+              "type": "file"
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/transaction/{txn_id}/bundle_manifest/": {
+      "get": {
+        "operationId": "transaction_bundle_manifest",
+        "summary": "Retrieve the file from the bundle for a transaction",
+        "description": "Retrieve the asset for a transaction",
+        "parameters": [
+          {
+            "name": "txn_id",
+            "in": "path",
+            "description": "A Transaction ID or Transaction Hash",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "no_files",
+            "in": "query",
+            "description": "If true, doesn't return the base 64 encoded files (will become default in the future)",
+            "required": false,
+            "type": "boolean"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Manifest",
+            "schema": {
+              "description": "The Manifest",
+              "type": "object"
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    },
+    "/methods/": {
+      "get": {
+        "operationId": "methods_list",
+        "summary": "Retrieve the methods for this app",
+        "description": "Retrieve the methods for this app",
+        "responses": {
+          "200": {
+            "description": "List of methods",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Method"
+              }
+            }
+          }
+        },
+        "tags": [
+          "operations"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "Method": {
+      "required": [
+        "name",
+        "smart_contract",
+        "method_hash",
+        "parameters"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "readOnly": true
+        },
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "minLength": 1
+        },
+        "smart_contract": {
+          "type": "string",
+          "title": "Smart contract"
+        },
+        "method_hash": {
+          "title": "Method hash",
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "title": "Parameters",
+          "type": "string"
+        },
+        "funcName": {
+          "title": "FuncName",
+          "type": "string",
+          "x-nullable": true
+        },
+        "payable": {
+          "title": "Payable",
+          "type": "boolean"
+        },
+        "stateMutability": {
+          "title": "StateMutability",
+          "type": "string",
+          "x-nullable": true
+        },
+        "return_type": {
+          "title": "Return type",
+          "type": "string",
+          "x-nullable": true
+        }
+      }
+    },
+    "Transaction": {
+      "required": [
+        "payload",
+        "timestamp",
+        "application",
+        "organisation",
+        "group",
+        "member",
+        "smart_contract",
+        "adapter",
+        "bytes_stored_on_blockchain",
+        "bundle",
+        "data_store"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string",
+          "readOnly": true
+        },
+        "parent_id": {
+          "title": "Parent id",
+          "type": "string",
+          "minLength": 1,
+          "x-nullable": true
+        },
+        "method": {
+          "type": "string",
+          "title": "Method",
+          "x-nullable": true
+        },
+        "payload": {
+          "title": "Payload",
+          "type": "string"
+        },
+        "receipt": {
+          "title": "Receipt",
+          "type": "string",
+          "x-nullable": true
+        },
+        "timestamp": {
+          "title": "Timestamp",
+          "type": "string",
+          "format": "date-time"
+        },
+        "application": {
+          "type": "string",
+          "title": "Application"
+        },
+        "organisation": {
+          "type": "string",
+          "title": "Organisation"
+        },
+        "group": {
+          "type": "string",
+          "title": "Group"
+        },
+        "member": {
+          "type": "string",
+          "title": "Member"
+        },
+        "user": {
+          "title": "User",
+          "type": "string",
+          "readOnly": true
+        },
+        "transaction_hash": {
+          "title": "Transaction hash",
+          "type": "string",
+          "minLength": 1,
+          "x-nullable": true
+        },
+        "smart_contract": {
+          "type": "string",
+          "title": "Smart contract"
+        },
+        "adapter": {
+          "type": "string",
+          "title": "Adapter"
+        },
+        "is_asset": {
+          "title": "Is asset",
+          "type": "boolean"
+        },
+        "bytes_stored_on_blockchain": {
+          "title": "Bytes stored on blockchain",
+          "type": "integer",
+          "maximum": 9223372036854775807,
+          "minimum": -9223372036854775808
+        },
+        "bundle": {
+          "type": "string",
+          "title": "Bundle"
+        },
+        "data_store": {
+          "type": "string",
+          "title": "Data store"
+        },
+        "bytes_stored_on_datastore": {
+          "title": "Bytes stored on datastore",
+          "type": "integer",
+          "maximum": 9223372036854775807,
+          "minimum": -9223372036854775808,
+          "x-nullable": true
+        },
+        "error": {
+          "title": "Error",
+          "type": "string",
+          "x-nullable": true
+        },
+        "error_details": {
+          "title": "Error details",
+          "type": "string",
+          "x-nullable": true
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "readOnly": true
+        }
+      }
+    }
+  }
+}</value>
+  </data>
+</root>

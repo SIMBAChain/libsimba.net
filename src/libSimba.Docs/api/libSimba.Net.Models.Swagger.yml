@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Models.Swagger
+  commentId: N:libSimba.Net.Models.Swagger
+  id: libSimba.Net.Models.Swagger
+  children:
+  - libSimba.Net.Models.Swagger.ApplicationMetadata
+  - libSimba.Net.Models.Swagger.Info
+  - libSimba.Net.Models.Swagger.Method
+  - libSimba.Net.Models.Swagger.Parameter
+  - libSimba.Net.Models.Swagger.Swagger
+  langs:
+  - csharp
+  - vb
+  name: libSimba.Net.Models.Swagger
+  nameWithType: libSimba.Net.Models.Swagger
+  fullName: libSimba.Net.Models.Swagger
+  type: Namespace
+  assemblies:
+  - libSimba.Net
+references:
+- uid: libSimba.Net.Models.Swagger.ApplicationMetadata
+  commentId: T:libSimba.Net.Models.Swagger.ApplicationMetadata
+  parent: libSimba.Net.Models.Swagger
+  name: ApplicationMetadata
+  nameWithType: ApplicationMetadata
+  fullName: libSimba.Net.Models.Swagger.ApplicationMetadata
+- uid: libSimba.Net.Models.Swagger.Info
+  commentId: T:libSimba.Net.Models.Swagger.Info
+  parent: libSimba.Net.Models.Swagger
+  name: Info
+  nameWithType: Info
+  fullName: libSimba.Net.Models.Swagger.Info
+- uid: libSimba.Net.Models.Swagger.Method
+  commentId: T:libSimba.Net.Models.Swagger.Method
+  name: Method
+  nameWithType: Method
+  fullName: libSimba.Net.Models.Swagger.Method
+- uid: libSimba.Net.Models.Swagger.Parameter
+  commentId: T:libSimba.Net.Models.Swagger.Parameter
+  name: Parameter
+  nameWithType: Parameter
+  fullName: libSimba.Net.Models.Swagger.Parameter
+- uid: libSimba.Net.Models.Swagger.Swagger
+  commentId: T:libSimba.Net.Models.Swagger.Swagger
+  name: Swagger
+  nameWithType: Swagger
+  fullName: libSimba.Net.Models.Swagger.Swagger
+- uid: libSimba.Net.Models.Swagger
+  commentId: N:libSimba.Net.Models.Swagger
+  name: libSimba.Net.Models.Swagger
+  nameWithType: libSimba.Net.Models.Swagger
+  fullName: libSimba.Net.Models.Swagger

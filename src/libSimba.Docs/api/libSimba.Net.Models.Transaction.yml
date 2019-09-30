@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  id: libSimba.Net.Models.Transaction
+  children:
+  - libSimba.Net.Models.Transaction.ErrorDetails
+  - libSimba.Net.Models.Transaction.Payload
+  - libSimba.Net.Models.Transaction.RawPayload
+  - libSimba.Net.Models.Transaction.Receipt
+  - libSimba.Net.Models.Transaction.Serializable
+  - libSimba.Net.Models.Transaction.Transaction
+  - libSimba.Net.Models.Transaction.TransactionStatus
+  - libSimba.Net.Models.Transaction.TransactionSubmitted
+  langs:
+  - csharp
+  - vb
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction
+  type: Namespace
+  assemblies:
+  - libSimba.Net
+references:
+- uid: libSimba.Net.Models.Transaction.ErrorDetails
+  commentId: T:libSimba.Net.Models.Transaction.ErrorDetails
+  name: ErrorDetails
+  nameWithType: ErrorDetails
+  fullName: libSimba.Net.Models.Transaction.ErrorDetails
+- uid: libSimba.Net.Models.Transaction.Payload
+  commentId: T:libSimba.Net.Models.Transaction.Payload
+  parent: libSimba.Net.Models.Transaction
+  name: Payload
+  nameWithType: Payload
+  fullName: libSimba.Net.Models.Transaction.Payload
+- uid: libSimba.Net.Models.Transaction.RawPayload
+  commentId: T:libSimba.Net.Models.Transaction.RawPayload
+  parent: libSimba.Net.Models.Transaction
+  name: RawPayload
+  nameWithType: RawPayload
+  fullName: libSimba.Net.Models.Transaction.RawPayload
+- uid: libSimba.Net.Models.Transaction.Receipt
+  commentId: T:libSimba.Net.Models.Transaction.Receipt
+  parent: libSimba.Net.Models.Transaction
+  name: Receipt
+  nameWithType: Receipt
+  fullName: libSimba.Net.Models.Transaction.Receipt
+- uid: libSimba.Net.Models.Transaction.Serializable
+  commentId: T:libSimba.Net.Models.Transaction.Serializable
+  parent: libSimba.Net.Models.Transaction
+  name: Serializable
+  nameWithType: Serializable
+  fullName: libSimba.Net.Models.Transaction.Serializable
+- uid: libSimba.Net.Models.Transaction.Transaction
+  commentId: T:libSimba.Net.Models.Transaction.Transaction
+  parent: libSimba.Net.Models.Transaction
+  name: Transaction
+  nameWithType: Transaction
+  fullName: libSimba.Net.Models.Transaction.Transaction
+- uid: libSimba.Net.Models.Transaction.TransactionStatus
+  commentId: T:libSimba.Net.Models.Transaction.TransactionStatus
+  parent: libSimba.Net.Models.Transaction
+  name: TransactionStatus
+  nameWithType: TransactionStatus
+  fullName: libSimba.Net.Models.Transaction.TransactionStatus
+- uid: libSimba.Net.Models.Transaction.TransactionSubmitted
+  commentId: T:libSimba.Net.Models.Transaction.TransactionSubmitted
+  name: TransactionSubmitted
+  nameWithType: TransactionSubmitted
+  fullName: libSimba.Net.Models.Transaction.TransactionSubmitted
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction

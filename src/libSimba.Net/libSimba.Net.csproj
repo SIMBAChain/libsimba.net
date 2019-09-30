@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ApplicationIcon />
+    <Win32Resource />
+    <Company>SIMBAChain Inc.</Company>
+    <Product>libnet</Product>
+    <PackageProjectUrl>https://simbachain.github.io/libnet/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/simbachain/libnet/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nethereum.Accounts" Version="3.4.0" />
+    <PackageReference Include="Nethereum.Hex" Version="3.4.0" />
+    <PackageReference Include="Nethereum.KeyStore" Version="3.4.0" />
+    <PackageReference Include="Nethereum.RLP" Version="3.4.0" />
+    <PackageReference Include="Nethereum.Signer" Version="3.4.0" />
+    <PackageReference Include="Nethereum.Web3" Version="3.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+﻿- name: Home
+  href: ../../README.md
+- name: Articles
+  href: articles/
+  homepage: articles/getting_started.md
+- name: API Documentation
+  href: api/
+  homepage: api/libSimba.Net.Simba.yml

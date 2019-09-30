@@ -1,0 +1,177 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Wallet.ISigningConfirmation
+  commentId: T:libSimba.Net.Wallet.ISigningConfirmation
+  id: ISigningConfirmation
+  parent: libSimba.Net.Wallet
+  children:
+  - libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  langs:
+  - csharp
+  - vb
+  name: ISigningConfirmation
+  nameWithType: ISigningConfirmation
+  fullName: libSimba.Net.Wallet.ISigningConfirmation
+  type: Interface
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/ISigningConfirmationj.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: ISigningConfirmation
+    path: ../libSimba.Net/Wallet/ISigningConfirmationj.cs
+    startLine: 5
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  syntax:
+    content: public interface ISigningConfirmation
+    content.vb: Public Interface ISigningConfirmation
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  commentId: M:libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  id: RequestSigningConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  parent: libSimba.Net.Wallet.ISigningConfirmation
+  langs:
+  - csharp
+  - vb
+  name: RequestSigningConfirmation(RawPayload)
+  nameWithType: ISigningConfirmation.RequestSigningConfirmation(RawPayload)
+  fullName: libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/ISigningConfirmationj.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: RequestSigningConfirmation
+    path: ../libSimba.Net/Wallet/ISigningConfirmationj.cs
+    startLine: 7
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  syntax:
+    content: Task<bool> RequestSigningConfirmation(RawPayload payload)
+    parameters:
+    - id: payload
+      type: libSimba.Net.Models.Transaction.RawPayload
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function RequestSigningConfirmation(payload As RawPayload) As Task(Of Boolean)
+  overload: libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation*
+references:
+- uid: libSimba.Net.Wallet
+  commentId: N:libSimba.Net.Wallet
+  name: libSimba.Net.Wallet
+  nameWithType: libSimba.Net.Wallet
+  fullName: libSimba.Net.Wallet
+- uid: libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation*
+  commentId: Overload:libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation
+  name: RequestSigningConfirmation
+  nameWithType: ISigningConfirmation.RequestSigningConfirmation
+  fullName: libSimba.Net.Wallet.ISigningConfirmation.RequestSigningConfirmation
+- uid: libSimba.Net.Models.Transaction.RawPayload
+  commentId: T:libSimba.Net.Models.Transaction.RawPayload
+  parent: libSimba.Net.Models.Transaction
+  name: RawPayload
+  nameWithType: RawPayload
+  fullName: libSimba.Net.Models.Transaction.RawPayload
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,4812 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Simba.SimbaChain
+  commentId: T:libSimba.Net.Simba.SimbaChain
+  id: SimbaChain
+  parent: libSimba.Net.Simba
+  children:
+  - libSimba.Net.Simba.SimbaChain.#ctor(System.String,libSimba.Net.Wallet.WalletBase)
+  - libSimba.Net.Simba.SimbaChain.AddFunds(System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  - libSimba.Net.Simba.SimbaChain.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  - libSimba.Net.Simba.SimbaChain.GetBalance(System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetTransaction(System.String,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaChain.Initialize(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: SimbaChain
+  nameWithType: SimbaChain
+  fullName: libSimba.Net.Simba.SimbaChain
+  type: Class
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: SimbaChain
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 23
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nlibsimba API Interaction implementation for Simbachain.com\n"
+  example: []
+  syntax:
+    content: 'public class SimbaChain : SimbaBase'
+    content.vb: >-
+      Public Class SimbaChain
+          Inherits SimbaBase
+  inheritance:
+  - System.Object
+  - libSimba.Net.Simba.SimbaBase
+  inheritedMembers:
+  - libSimba.Net.Simba.SimbaBase.ApiKey
+  - libSimba.Net.Simba.SimbaBase.Endpoint
+  - libSimba.Net.Simba.SimbaBase.ManagementKey
+  - libSimba.Net.Simba.SimbaBase.Metadata
+  - libSimba.Net.Simba.SimbaBase.Wallet
+  - libSimba.Net.Simba.SimbaBase.Client
+  - libSimba.Net.Simba.SimbaBase.GetSimbaInstance(System.String,libSimba.Net.Wallet.WalletBase,System.String,System.String,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance``1(System.String)
+  - libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError(System.String,System.Int32,System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaBase.SetWallet(libSimba.Net.Wallet.WalletBase)
+  - libSimba.Net.Simba.SimbaBase.SetApiKey(System.String)
+  - libSimba.Net.Simba.SimbaBase.SetManagementKey(System.String)
+  - libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+  - libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+  - libSimba.Net.Simba.SimbaBase.ValidateCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{{T}})
+  - libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+  - libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary{System.String,System.Object})
+  - libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,{TSerializeTo},System.Threading.CancellationToken)
+  - libSimba.Net.Simba.SimbaBase.DoHttpToStream(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: libSimba.Net.Simba.SimbaChain.#ctor(System.String,libSimba.Net.Wallet.WalletBase)
+  commentId: M:libSimba.Net.Simba.SimbaChain.#ctor(System.String,libSimba.Net.Wallet.WalletBase)
+  id: '#ctor(System.String,libSimba.Net.Wallet.WalletBase)'
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: SimbaChain(String, WalletBase)
+  nameWithType: SimbaChain.SimbaChain(String, WalletBase)
+  fullName: libSimba.Net.Simba.SimbaChain.SimbaChain(System.String, libSimba.Net.Wallet.WalletBase)
+  type: Constructor
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: .ctor
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 30
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nInternal constructor\n"
+  example: []
+  syntax:
+    content: protected SimbaChain(string endpoint, WalletBase wallet)
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: ''
+    - id: wallet
+      type: libSimba.Net.Wallet.WalletBase
+      description: ''
+    content.vb: Protected Sub New(endpoint As String, wallet As WalletBase)
+  overload: libSimba.Net.Simba.SimbaChain.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: libSimba.Net.Simba.SimbaChain.Initialize(System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.Initialize(System.Threading.CancellationToken)
+  id: Initialize(System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: Initialize(CancellationToken)
+  nameWithType: SimbaChain.Initialize(CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.Initialize(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Initialize
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 39
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nInternal constructor\n"
+  example: []
+  syntax:
+    content: protected override Task Initialize(CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Protected Overrides Function Initialize(ct As CancellationToken = Nothing) As Task
+  overridden: libSimba.Net.Simba.SimbaBase.Initialize(System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.Initialize*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  id: CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CallMethod(String, Dictionary<String, Object>, CancellationToken)
+  nameWithType: SimbaChain.CallMethod(String, Dictionary<String, Object>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethod(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CallMethod
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 72
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nCall a method on the API.\nUse this method to call a method on your smart contract. It will generate the transaction, sign the transaction,\nthen deploy the transaction to the blockchain.\n"
+  example: []
+  syntax:
+    content: public override Task<Transaction> CallMethod(string method, Dictionary<string, object> parameters, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: method
+      type: System.String
+      description: the method to call
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: the Parameters for the method
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+      description: the transaction details
+    content.vb: Public Overrides Function CallMethod(method As String, parameters As Dictionary(Of String, Object), ct As CancellationToken = Nothing) As Task(Of Transaction)
+  overridden: libSimba.Net.Simba.SimbaBase.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.CallMethod*
+  nameWithType.vb: SimbaChain.CallMethod(String, Dictionary(Of String, Object), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.CallMethod(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: CallMethod(String, Dictionary(Of String, Object), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  id: CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<Stream>, CancellationToken)
+  nameWithType: SimbaChain.CallMethodWithFile(String, Dictionary<String, Object>, List<Stream>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<System.IO.Stream>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CallMethodWithFile
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 175
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nCall a method on the API with files\nUse this method to call a method on your smart contract with offchained files. It will generate the transaction,\nsign the transaction, then deploy the transaction to the blockchain.\nThis version accepts a List of Streams that represent the files to be sent\n"
+  example: []
+  syntax:
+    content: public override Task<Transaction> CallMethodWithFile(string method, Dictionary<string, object> parameters, List<Stream> files, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: method
+      type: System.String
+      description: the method to call
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: the Parameters for the method
+    - id: files
+      type: System.Collections.Generic.List{System.IO.Stream}
+      description: the files
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+      description: the transaction details
+    content.vb: Public Overrides Function CallMethodWithFile(method As String, parameters As Dictionary(Of String, Object), files As List(Of Stream), ct As CancellationToken = Nothing) As Task(Of Transaction)
+  overridden: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.CallMethodWithFile*
+  nameWithType.vb: SimbaChain.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Stream), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Stream), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  id: CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<FileData>, CancellationToken)
+  nameWithType: SimbaChain.CallMethodWithFile(String, Dictionary<String, Object>, List<FileData>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<libSimba.Net.Models.FileData>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CallMethodWithFile
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 222
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nCall a method on the API with files\nUse this method to call a method on your smart contract with offchained files. It will generate the transaction,\nsign the transaction, then deploy the transaction to the blockchain.\nThis version accepts a List of <xref href=\"libSimba.Net.Models.FileData\" data-throw-if-not-resolved=\"false\"></xref> objects that represent the files to be sent\n"
+  example: []
+  syntax:
+    content: public override Task<Transaction> CallMethodWithFile(string method, Dictionary<string, object> parameters, List<FileData> files, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: method
+      type: System.String
+      description: the method to call
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: the Parameters for the method
+    - id: files
+      type: System.Collections.Generic.List{libSimba.Net.Models.FileData}
+      description: the files
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+      description: the transaction details
+    content.vb: Public Overrides Function CallMethodWithFile(method As String, parameters As Dictionary(Of String, Object), files As List(Of FileData), ct As CancellationToken = Nothing) As Task(Of Transaction)
+  overridden: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.CallMethodWithFile*
+  nameWithType.vb: SimbaChain.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileData), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of libSimba.Net.Models.FileData), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileData), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  id: CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<FileInfo>, CancellationToken)
+  nameWithType: SimbaChain.CallMethodWithFile(String, Dictionary<String, Object>, List<FileInfo>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<System.IO.FileInfo>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CallMethodWithFile
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 268
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nCall a method on the API with files\nUse this method to call a method on your smart contract with offchained files. It will generate the transaction,\nsign the transaction, then deploy the transaction to the blockchain.\nThis version accepts a List of <xref href=\"System.IO.FileInfo\" data-throw-if-not-resolved=\"false\"></xref> objects that represent the files to be sent\n"
+  example: []
+  syntax:
+    content: public override Task<Transaction> CallMethodWithFile(string method, Dictionary<string, object> parameters, List<FileInfo> files, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: method
+      type: System.String
+      description: the method to call
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: the Parameters for the method
+    - id: files
+      type: System.Collections.Generic.List{System.IO.FileInfo}
+      description: the files
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+      description: the transaction details
+    content.vb: Public Overrides Function CallMethodWithFile(method As String, parameters As Dictionary(Of String, Object), files As List(Of FileInfo), ct As CancellationToken = Nothing) As Task(Of Transaction)
+  overridden: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.CallMethodWithFile*
+  nameWithType.vb: SimbaChain.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileInfo), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of System.IO.FileInfo), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileInfo), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  id: CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<Byte[]>, CancellationToken)
+  nameWithType: SimbaChain.CallMethodWithFile(String, Dictionary<String, Object>, List<Byte[]>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<System.Byte[]>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CallMethodWithFile
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 315
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nCall a method on the API with files\nUse this method to call a method on your smart contract with offchained files. It will generate the transaction,\nsign the transaction, then deploy the transaction to the blockchain.\nThis version accepts a List of byte arrays that represent the files to be sent\n"
+  example: []
+  syntax:
+    content: public override Task<Transaction> CallMethodWithFile(string method, Dictionary<string, object> parameters, List<byte[]> files, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: method
+      type: System.String
+      description: the method to call
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: the Parameters for the method
+    - id: files
+      type: System.Collections.Generic.List{System.Byte[]}
+      description: the files
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+      description: the transaction details
+    content.vb: Public Overrides Function CallMethodWithFile(method As String, parameters As Dictionary(Of String, Object), files As List(Of Byte()), ct As CancellationToken = Nothing) As Task(Of Transaction)
+  overridden: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.CallMethodWithFile*
+  nameWithType.vb: SimbaChain.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Byte()), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of System.Byte()), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Byte()), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  id: GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetMethodTransactions(String, Dictionary<String, Object>, CancellationToken)
+  nameWithType: SimbaChain.GetMethodTransactions(String, Dictionary<String, Object>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetMethodTransactions(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetMethodTransactions
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 357
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets a paged list of transactions for the method\n"
+  example: []
+  syntax:
+    content: public override Task<PagedResponse<Transaction>> GetMethodTransactions(string method, Dictionary<string, object> parameters, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: method
+      type: System.String
+      description: The method
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The query Parameters
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.PagedResponse{libSimba.Net.Models.Transaction.Transaction}}
+    content.vb: Public Overrides Function GetMethodTransactions(method As String, parameters As Dictionary(Of String, Object), ct As CancellationToken = Nothing) As Task(Of PagedResponse(Of Transaction))
+  overridden: libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetMethodTransactions*
+  nameWithType.vb: SimbaChain.GetMethodTransactions(String, Dictionary(Of String, Object), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.GetMethodTransactions(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: GetMethodTransactions(String, Dictionary(Of String, Object), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  id: CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CheckTransactionStatus(String, CancellationToken)
+  nameWithType: SimbaChain.CheckTransactionStatus(String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.CheckTransactionStatus(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CheckTransactionStatus
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 393
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets the status of a transaction by ID\n"
+  example: []
+  syntax:
+    content: public override Task<TransactionStatus> CheckTransactionStatus(string transactionId, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: transactionId
+      type: System.String
+      description: a transaction ID
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.TransactionStatus}
+    content.vb: Public Overrides Function CheckTransactionStatus(transactionId As String, ct As CancellationToken = Nothing) As Task(Of TransactionStatus)
+  overridden: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.CheckTransactionStatus*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  id: CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CheckTransactionStatusFromObject(Transaction)
+  nameWithType: SimbaChain.CheckTransactionStatusFromObject(Transaction)
+  fullName: libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CheckTransactionStatusFromObject
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 404
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets the status of a transaction\n"
+  example: []
+  syntax:
+    content: protected override TransactionStatus CheckTransactionStatusFromObject(Transaction transaction)
+    parameters:
+    - id: transaction
+      type: libSimba.Net.Models.Transaction.Transaction
+      description: a transaction object
+    return:
+      type: libSimba.Net.Models.Transaction.TransactionStatus
+    content.vb: Protected Overrides Function CheckTransactionStatusFromObject(transaction As Transaction) As TransactionStatus
+  overridden: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  overload: libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  commentId: M:libSimba.Net.Simba.SimbaChain.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  id: CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: CheckTransactionDone(TransactionStatus)
+  nameWithType: SimbaChain.CheckTransactionDone(TransactionStatus)
+  fullName: libSimba.Net.Simba.SimbaChain.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CheckTransactionDone
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 432
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nCheck if the transaction is complete\n"
+  example: []
+  syntax:
+    content: protected override bool CheckTransactionDone(TransactionStatus transaction)
+    parameters:
+    - id: transaction
+      type: libSimba.Net.Models.Transaction.TransactionStatus
+      description: the transaction object
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides Function CheckTransactionDone(transaction As TransactionStatus) As Boolean
+  overridden: libSimba.Net.Simba.SimbaBase.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  overload: libSimba.Net.Simba.SimbaChain.CheckTransactionDone*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.GetTransaction(System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetTransaction(System.String,System.Threading.CancellationToken)
+  id: GetTransaction(System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetTransaction(String, CancellationToken)
+  nameWithType: SimbaChain.GetTransaction(String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetTransaction(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetTransaction
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 442
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGet the status of a transaction by ID\n"
+  example: []
+  syntax:
+    content: public override Task<Transaction> GetTransaction(string transactionIdOrHash, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: transactionIdOrHash
+      type: System.String
+      description: the transaction ID
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+    content.vb: Public Overrides Function GetTransaction(transactionIdOrHash As String, ct As CancellationToken = Nothing) As Task(Of Transaction)
+  overridden: libSimba.Net.Simba.SimbaBase.GetTransaction(System.String,System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetTransaction*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  id: GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetTransactions(Dictionary<String, Object>, CancellationToken)
+  nameWithType: SimbaChain.GetTransactions(Dictionary<String, Object>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetTransactions(System.Collections.Generic.Dictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetTransactions
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 475
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets a paged list of transactions\n"
+  example: []
+  syntax:
+    content: public override Task<PagedResponse<Transaction>> GetTransactions(Dictionary<string, object> parameters = null, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: parameters
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The query Parameters
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.PagedResponse{libSimba.Net.Models.Transaction.Transaction}}
+    content.vb: Public Overrides Function GetTransactions(parameters As Dictionary(Of String, Object) = Nothing, ct As CancellationToken = Nothing) As Task(Of PagedResponse(Of Transaction))
+  overridden: libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetTransactions*
+  nameWithType.vb: SimbaChain.GetTransactions(Dictionary(Of String, Object), CancellationToken)
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: libSimba.Net.Simba.SimbaChain.GetTransactions(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: GetTransactions(Dictionary(Of String, Object), CancellationToken)
+- uid: libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  id: GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetBundleMetadataForTransaction(String, CancellationToken)
+  nameWithType: SimbaChain.GetBundleMetadataForTransaction(String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetBundleMetadataForTransaction
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 519
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets a the bundle metadata for a transaction\n"
+  example: []
+  syntax:
+    content: public override Task<BundleManifest> GetBundleMetadataForTransaction(string transactionIdOrHash, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: transactionIdOrHash
+      type: System.String
+      description: Either a transaction ID or a transaction hash
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.BundleManifest}
+    content.vb: Public Overrides Function GetBundleMetadataForTransaction(transactionIdOrHash As String, ct As CancellationToken = Nothing) As Task(Of BundleManifest)
+  overridden: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  id: GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetBundleForTransaction(String, Boolean, CancellationToken)
+  nameWithType: SimbaChain.GetBundleForTransaction(String, Boolean, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetBundleForTransaction(System.String, System.Boolean, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetBundleForTransaction
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 555
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets the bundle for a transaction\n"
+  example: []
+  syntax:
+    content: public override Task<Stream> GetBundleForTransaction(string transactionIdOrHash, bool stream, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: transactionIdOrHash
+      type: System.String
+      description: Either a transaction ID or a transaction hash
+    - id: stream
+      type: System.Boolean
+      description: TODO
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Public Overrides Function GetBundleForTransaction(transactionIdOrHash As String, stream As Boolean, ct As CancellationToken = Nothing) As Task(Of Stream)
+  overridden: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetBundleForTransaction*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  id: GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetFileFromBundleForTransaction(String, Int32, Boolean, CancellationToken)
+  nameWithType: SimbaChain.GetFileFromBundleForTransaction(String, Int32, Boolean, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction(System.String, System.Int32, System.Boolean, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetFileFromBundleForTransaction
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 592
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets a file from the bundle for a transaction\n"
+  example: []
+  syntax:
+    content: public override Task<Stream> GetFileFromBundleForTransaction(string transactionIdOrHash, int fileIdx, bool stream, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: transactionIdOrHash
+      type: System.String
+      description: Either a transaction ID or a transaction hash
+    - id: fileIdx
+      type: System.Int32
+      description: The index of the file in the bundle metadata
+    - id: stream
+      type: System.Boolean
+      description: TODO
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Public Overrides Function GetFileFromBundleForTransaction(transactionIdOrHash As String, fileIdx As Integer, stream As Boolean, ct As CancellationToken = Nothing) As Task(Of Stream)
+  overridden: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  id: GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetFileFromBundleByNameForTransaction(String, String, CancellationToken)
+  nameWithType: SimbaChain.GetFileFromBundleByNameForTransaction(String, String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction(System.String, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetFileFromBundleByNameForTransaction
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 629
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGets a file from the bundle for a transaction\n"
+  example: []
+  syntax:
+    content: public override Task<Stream> GetFileFromBundleByNameForTransaction(string transactionIdOrHash, string fileName, CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: transactionIdOrHash
+      type: System.String
+      description: Either a transaction ID or a transaction hash
+    - id: fileName
+      type: System.String
+      description: The name of the file in the bundle metadata
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Public Overrides Function GetFileFromBundleByNameForTransaction(transactionIdOrHash As String, fileName As String, ct As CancellationToken = Nothing) As Task(Of Stream)
+  overridden: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.GetBalance(System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.GetBalance(System.Threading.CancellationToken)
+  id: GetBalance(System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: GetBalance(CancellationToken)
+  nameWithType: SimbaChain.GetBalance(CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.GetBalance(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetBalance
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 663
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nGet the balance for the attached Wallet\n"
+  example: []
+  syntax:
+    content: public override Task<Balance> GetBalance(CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Balance}
+    content.vb: Public Overrides Function GetBalance(ct As CancellationToken = Nothing) As Task(Of Balance)
+  overridden: libSimba.Net.Simba.SimbaBase.GetBalance(System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.GetBalance*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Simba.SimbaChain.AddFunds(System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaChain.AddFunds(System.Threading.CancellationToken)
+  id: AddFunds(System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaChain
+  langs:
+  - csharp
+  - vb
+  name: AddFunds(CancellationToken)
+  nameWithType: SimbaChain.AddFunds(CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaChain.AddFunds(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Simba/SimbaChain.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: AddFunds
+    path: ../libSimba.Net/Simba/SimbaChain.cs
+    startLine: 722
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Simba
+  summary: "\nAdd funds to the attached Wallet.\nPlease check the output of this method. It is of the form\n<pre><code>{\ntxnId: null,\nfaucet_url: null,\npoa: true\n}</code></pre>\n   If successful, txnId will be populated.\n   If the network is PoA, then poa will be true, and txnId will be null\n   If the faucet for the network is external (e.g. Rinkeby, Ropsten, etc), then txnId will be null,\n   and faucet_url will be populated with a URL. You should present this URL to your users to direct them\n   to request funds there.\n"
+  example: []
+  syntax:
+    content: public override Task<Funds> AddFunds(CancellationToken ct = default(CancellationToken))
+    parameters:
+    - id: ct
+      type: System.Threading.CancellationToken
+      description: cancellation token
+    return:
+      type: System.Threading.Tasks.Task{libSimba.Net.Models.Funds}
+    content.vb: Public Overrides Function AddFunds(ct As CancellationToken = Nothing) As Task(Of Funds)
+  overridden: libSimba.Net.Simba.SimbaBase.AddFunds(System.Threading.CancellationToken)
+  overload: libSimba.Net.Simba.SimbaChain.AddFunds*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: libSimba.Net.Simba
+  commentId: N:libSimba.Net.Simba
+  name: libSimba.Net.Simba
+  nameWithType: libSimba.Net.Simba
+  fullName: libSimba.Net.Simba
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: libSimba.Net.Simba.SimbaBase
+  commentId: T:libSimba.Net.Simba.SimbaBase
+  parent: libSimba.Net.Simba
+  name: SimbaBase
+  nameWithType: SimbaBase
+  fullName: libSimba.Net.Simba.SimbaBase
+- uid: libSimba.Net.Simba.SimbaBase.ApiKey
+  commentId: F:libSimba.Net.Simba.SimbaBase.ApiKey
+  parent: libSimba.Net.Simba.SimbaBase
+  name: ApiKey
+  nameWithType: SimbaBase.ApiKey
+  fullName: libSimba.Net.Simba.SimbaBase.ApiKey
+- uid: libSimba.Net.Simba.SimbaBase.Endpoint
+  commentId: F:libSimba.Net.Simba.SimbaBase.Endpoint
+  parent: libSimba.Net.Simba.SimbaBase
+  name: Endpoint
+  nameWithType: SimbaBase.Endpoint
+  fullName: libSimba.Net.Simba.SimbaBase.Endpoint
+- uid: libSimba.Net.Simba.SimbaBase.ManagementKey
+  commentId: F:libSimba.Net.Simba.SimbaBase.ManagementKey
+  parent: libSimba.Net.Simba.SimbaBase
+  name: ManagementKey
+  nameWithType: SimbaBase.ManagementKey
+  fullName: libSimba.Net.Simba.SimbaBase.ManagementKey
+- uid: libSimba.Net.Simba.SimbaBase.Metadata
+  commentId: F:libSimba.Net.Simba.SimbaBase.Metadata
+  parent: libSimba.Net.Simba.SimbaBase
+  name: Metadata
+  nameWithType: SimbaBase.Metadata
+  fullName: libSimba.Net.Simba.SimbaBase.Metadata
+- uid: libSimba.Net.Simba.SimbaBase.Wallet
+  commentId: F:libSimba.Net.Simba.SimbaBase.Wallet
+  parent: libSimba.Net.Simba.SimbaBase
+  name: Wallet
+  nameWithType: SimbaBase.Wallet
+  fullName: libSimba.Net.Simba.SimbaBase.Wallet
+- uid: libSimba.Net.Simba.SimbaBase.Client
+  commentId: P:libSimba.Net.Simba.SimbaBase.Client
+  parent: libSimba.Net.Simba.SimbaBase
+  name: Client
+  nameWithType: SimbaBase.Client
+  fullName: libSimba.Net.Simba.SimbaBase.Client
+- uid: libSimba.Net.Simba.SimbaBase.GetSimbaInstance(System.String,libSimba.Net.Wallet.WalletBase,System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetSimbaInstance(System.String,libSimba.Net.Wallet.WalletBase,System.String,System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetSimbaInstance(String, WalletBase, String, String, CancellationToken)
+  nameWithType: SimbaBase.GetSimbaInstance(String, WalletBase, String, String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetSimbaInstance(System.String, libSimba.Net.Wallet.WalletBase, System.String, System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetSimbaInstance(System.String,libSimba.Net.Wallet.WalletBase,System.String,System.String,System.Threading.CancellationToken)
+    name: GetSimbaInstance
+    nameWithType: SimbaBase.GetSimbaInstance
+    fullName: libSimba.Net.Simba.SimbaBase.GetSimbaInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: libSimba.Net.Wallet.WalletBase
+    name: WalletBase
+    nameWithType: WalletBase
+    fullName: libSimba.Net.Wallet.WalletBase
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetSimbaInstance(System.String,libSimba.Net.Wallet.WalletBase,System.String,System.String,System.Threading.CancellationToken)
+    name: GetSimbaInstance
+    nameWithType: SimbaBase.GetSimbaInstance
+    fullName: libSimba.Net.Simba.SimbaBase.GetSimbaInstance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: libSimba.Net.Wallet.WalletBase
+    name: WalletBase
+    nameWithType: WalletBase
+    fullName: libSimba.Net.Wallet.WalletBase
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance``1(System.String)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance``1(System.String)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetPagedResponseInstance<T>(String)
+  nameWithType: SimbaBase.GetPagedResponseInstance<T>(String)
+  fullName: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance<T>(System.String)
+  nameWithType.vb: SimbaBase.GetPagedResponseInstance(Of T)(String)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance(Of T)(System.String)
+  name.vb: GetPagedResponseInstance(Of T)(String)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance``1(System.String)
+    name: GetPagedResponseInstance<T>
+    nameWithType: SimbaBase.GetPagedResponseInstance<T>
+    fullName: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance``1(System.String)
+    name: GetPagedResponseInstance(Of T)
+    nameWithType: SimbaBase.GetPagedResponseInstance(Of T)
+    fullName: libSimba.Net.Simba.SimbaBase.GetPagedResponseInstance(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError(System.String,System.Int32,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError(System.String,System.Int32,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: WaitForSuccessOrError(String, Int32, CancellationToken)
+  nameWithType: SimbaBase.WaitForSuccessOrError(String, Int32, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError(System.String, System.Int32, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError(System.String,System.Int32,System.Threading.CancellationToken)
+    name: WaitForSuccessOrError
+    nameWithType: SimbaBase.WaitForSuccessOrError
+    fullName: libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError(System.String,System.Int32,System.Threading.CancellationToken)
+    name: WaitForSuccessOrError
+    nameWithType: SimbaBase.WaitForSuccessOrError
+    fullName: libSimba.Net.Simba.SimbaBase.WaitForSuccessOrError
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.SetWallet(libSimba.Net.Wallet.WalletBase)
+  commentId: M:libSimba.Net.Simba.SimbaBase.SetWallet(libSimba.Net.Wallet.WalletBase)
+  parent: libSimba.Net.Simba.SimbaBase
+  name: SetWallet(WalletBase)
+  nameWithType: SimbaBase.SetWallet(WalletBase)
+  fullName: libSimba.Net.Simba.SimbaBase.SetWallet(libSimba.Net.Wallet.WalletBase)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.SetWallet(libSimba.Net.Wallet.WalletBase)
+    name: SetWallet
+    nameWithType: SimbaBase.SetWallet
+    fullName: libSimba.Net.Simba.SimbaBase.SetWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Wallet.WalletBase
+    name: WalletBase
+    nameWithType: WalletBase
+    fullName: libSimba.Net.Wallet.WalletBase
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.SetWallet(libSimba.Net.Wallet.WalletBase)
+    name: SetWallet
+    nameWithType: SimbaBase.SetWallet
+    fullName: libSimba.Net.Simba.SimbaBase.SetWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Wallet.WalletBase
+    name: WalletBase
+    nameWithType: WalletBase
+    fullName: libSimba.Net.Wallet.WalletBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.SetApiKey(System.String)
+  commentId: M:libSimba.Net.Simba.SimbaBase.SetApiKey(System.String)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: SetApiKey(String)
+  nameWithType: SimbaBase.SetApiKey(String)
+  fullName: libSimba.Net.Simba.SimbaBase.SetApiKey(System.String)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.SetApiKey(System.String)
+    name: SetApiKey
+    nameWithType: SimbaBase.SetApiKey
+    fullName: libSimba.Net.Simba.SimbaBase.SetApiKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.SetApiKey(System.String)
+    name: SetApiKey
+    nameWithType: SimbaBase.SetApiKey
+    fullName: libSimba.Net.Simba.SimbaBase.SetApiKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.SetManagementKey(System.String)
+  commentId: M:libSimba.Net.Simba.SimbaBase.SetManagementKey(System.String)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: SetManagementKey(String)
+  nameWithType: SimbaBase.SetManagementKey(String)
+  fullName: libSimba.Net.Simba.SimbaBase.SetManagementKey(System.String)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.SetManagementKey(System.String)
+    name: SetManagementKey
+    nameWithType: SimbaBase.SetManagementKey
+    fullName: libSimba.Net.Simba.SimbaBase.SetManagementKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.SetManagementKey(System.String)
+    name: SetManagementKey
+    nameWithType: SimbaBase.SetManagementKey
+    fullName: libSimba.Net.Simba.SimbaBase.SetManagementKey
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+  commentId: M:libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+  parent: libSimba.Net.Simba.SimbaBase
+  name: ApiAuthHeaders()
+  nameWithType: SimbaBase.ApiAuthHeaders()
+  fullName: libSimba.Net.Simba.SimbaBase.ApiAuthHeaders()
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+    name: ApiAuthHeaders
+    nameWithType: SimbaBase.ApiAuthHeaders
+    fullName: libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+    name: ApiAuthHeaders
+    nameWithType: SimbaBase.ApiAuthHeaders
+    fullName: libSimba.Net.Simba.SimbaBase.ApiAuthHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+  commentId: M:libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+  parent: libSimba.Net.Simba.SimbaBase
+  name: ManagementAuthHeaders()
+  nameWithType: SimbaBase.ManagementAuthHeaders()
+  fullName: libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders()
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+    name: ManagementAuthHeaders
+    nameWithType: SimbaBase.ManagementAuthHeaders
+    fullName: libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+    name: ManagementAuthHeaders
+    nameWithType: SimbaBase.ManagementAuthHeaders
+    fullName: libSimba.Net.Simba.SimbaBase.ManagementAuthHeaders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.ValidateCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:libSimba.Net.Simba.SimbaBase.ValidateCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: ValidateCall(String, Dictionary<String, Object>)
+  nameWithType: SimbaBase.ValidateCall(String, Dictionary<String, Object>)
+  fullName: libSimba.Net.Simba.SimbaBase.ValidateCall(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  nameWithType.vb: SimbaBase.ValidateCall(String, Dictionary(Of String, Object))
+  fullName.vb: libSimba.Net.Simba.SimbaBase.ValidateCall(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: ValidateCall(String, Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: ValidateCall
+    nameWithType: SimbaBase.ValidateCall
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateCall
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: ValidateCall
+    nameWithType: SimbaBase.ValidateCall
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateCall
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{{T}})
+  commentId: M:libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+  parent: libSimba.Net.Simba.SimbaBase
+  definition: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+  name: ValidateCall<T>(String, Dictionary<String, Object>, List<T>)
+  nameWithType: SimbaBase.ValidateCall<T>(String, Dictionary<String, Object>, List<T>)
+  fullName: libSimba.Net.Simba.SimbaBase.ValidateCall<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<T>)
+  nameWithType.vb: SimbaBase.ValidateCall(Of T)(String, Dictionary(Of String, Object), List(Of T))
+  fullName.vb: libSimba.Net.Simba.SimbaBase.ValidateCall(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of T))
+  name.vb: ValidateCall(Of T)(String, Dictionary(Of String, Object), List(Of T))
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+    name: ValidateCall<T>
+    nameWithType: SimbaBase.ValidateCall<T>
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateCall<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+    name: ValidateCall(Of T)
+    nameWithType: SimbaBase.ValidateCall(Of T)
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateCall(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: ValidateGetCall(String, Dictionary<String, Object>)
+  nameWithType: SimbaBase.ValidateGetCall(String, Dictionary<String, Object>)
+  fullName: libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>)
+  nameWithType.vb: SimbaBase.ValidateGetCall(String, Dictionary(Of String, Object))
+  fullName.vb: libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: ValidateGetCall(String, Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: ValidateGetCall
+    nameWithType: SimbaBase.ValidateGetCall
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateGetCall
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateGetCall(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: ValidateGetCall
+    nameWithType: SimbaBase.ValidateGetCall
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateGetCall
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+  commentId: M:libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+  parent: libSimba.Net.Simba.SimbaBase
+  name: ValidateAnyGetCall()
+  nameWithType: SimbaBase.ValidateAnyGetCall()
+  fullName: libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall()
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+    name: ValidateAnyGetCall
+    nameWithType: SimbaBase.ValidateAnyGetCall
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+    name: ValidateAnyGetCall
+    nameWithType: SimbaBase.ValidateAnyGetCall
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateAnyGetCall
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary{System.String,System.Object})
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: StringifyParameters(Dictionary<String, Object>)
+  nameWithType: SimbaBase.StringifyParameters(Dictionary<String, Object>)
+  fullName: libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary<System.String, System.Object>)
+  nameWithType.vb: SimbaBase.StringifyParameters(Dictionary(Of String, Object))
+  fullName.vb: libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary(Of System.String, System.Object))
+  name.vb: StringifyParameters(Dictionary(Of String, Object))
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: StringifyParameters
+    nameWithType: SimbaBase.StringifyParameters
+    fullName: libSimba.Net.Simba.SimbaBase.StringifyParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.StringifyParameters(System.Collections.Generic.Dictionary{System.String,System.Object})
+    name: StringifyParameters
+    nameWithType: SimbaBase.StringifyParameters
+    fullName: libSimba.Net.Simba.SimbaBase.StringifyParameters
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,{TSerializeTo},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  definition: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+  name: DoHttp<TSerializeTo>(HttpRequestMessage, TSerializeTo, CancellationToken)
+  nameWithType: SimbaBase.DoHttp<TSerializeTo>(HttpRequestMessage, TSerializeTo, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.DoHttp<TSerializeTo>(System.Net.Http.HttpRequestMessage, TSerializeTo, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.DoHttp(Of TSerializeTo)(HttpRequestMessage, TSerializeTo, CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.DoHttp(Of TSerializeTo)(System.Net.Http.HttpRequestMessage, TSerializeTo, System.Threading.CancellationToken)
+  name.vb: DoHttp(Of TSerializeTo)(HttpRequestMessage, TSerializeTo, CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+    name: DoHttp<TSerializeTo>
+    nameWithType: SimbaBase.DoHttp<TSerializeTo>
+    fullName: libSimba.Net.Simba.SimbaBase.DoHttp<TSerializeTo>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TSerializeTo
+    nameWithType: TSerializeTo
+    fullName: TSerializeTo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+    name: DoHttp(Of TSerializeTo)
+    nameWithType: SimbaBase.DoHttp(Of TSerializeTo)
+    fullName: libSimba.Net.Simba.SimbaBase.DoHttp(Of TSerializeTo)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TSerializeTo
+    nameWithType: TSerializeTo
+    fullName: TSerializeTo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.DoHttpToStream(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.DoHttpToStream(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: DoHttpToStream(HttpRequestMessage, CancellationToken)
+  nameWithType: SimbaBase.DoHttpToStream(HttpRequestMessage, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.DoHttpToStream(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.DoHttpToStream(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: DoHttpToStream
+    nameWithType: SimbaBase.DoHttpToStream
+    fullName: libSimba.Net.Simba.SimbaBase.DoHttpToStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.DoHttpToStream(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+    name: DoHttpToStream
+    nameWithType: SimbaBase.DoHttpToStream
+    fullName: libSimba.Net.Simba.SimbaBase.DoHttpToStream
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+  commentId: M:libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+  isExternal: true
+  name: ValidateCall<T>(String, Dictionary<String, Object>, List<T>)
+  nameWithType: SimbaBase.ValidateCall<T>(String, Dictionary<String, Object>, List<T>)
+  fullName: libSimba.Net.Simba.SimbaBase.ValidateCall<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<T>)
+  nameWithType.vb: SimbaBase.ValidateCall(Of T)(String, Dictionary(Of String, Object), List(Of T))
+  fullName.vb: libSimba.Net.Simba.SimbaBase.ValidateCall(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of T))
+  name.vb: ValidateCall(Of T)(String, Dictionary(Of String, Object), List(Of T))
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+    name: ValidateCall<T>
+    nameWithType: SimbaBase.ValidateCall<T>
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateCall<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.ValidateCall``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{``0})
+    name: ValidateCall(Of T)
+    nameWithType: SimbaBase.ValidateCall(Of T)
+    fullName: libSimba.Net.Simba.SimbaBase.ValidateCall(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+  isExternal: true
+  name: DoHttp<TSerializeTo>(HttpRequestMessage, TSerializeTo, CancellationToken)
+  nameWithType: SimbaBase.DoHttp<TSerializeTo>(HttpRequestMessage, TSerializeTo, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.DoHttp<TSerializeTo>(System.Net.Http.HttpRequestMessage, TSerializeTo, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.DoHttp(Of TSerializeTo)(HttpRequestMessage, TSerializeTo, CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.DoHttp(Of TSerializeTo)(System.Net.Http.HttpRequestMessage, TSerializeTo, System.Threading.CancellationToken)
+  name.vb: DoHttp(Of TSerializeTo)(HttpRequestMessage, TSerializeTo, CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+    name: DoHttp<TSerializeTo>
+    nameWithType: SimbaBase.DoHttp<TSerializeTo>
+    fullName: libSimba.Net.Simba.SimbaBase.DoHttp<TSerializeTo>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TSerializeTo
+    nameWithType: TSerializeTo
+    fullName: TSerializeTo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.DoHttp``1(System.Net.Http.HttpRequestMessage,``0,System.Threading.CancellationToken)
+    name: DoHttp(Of TSerializeTo)
+    nameWithType: SimbaBase.DoHttp(Of TSerializeTo)
+    fullName: libSimba.Net.Simba.SimbaBase.DoHttp(Of TSerializeTo)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Net.Http.HttpRequestMessage
+    name: HttpRequestMessage
+    nameWithType: HttpRequestMessage
+    fullName: System.Net.Http.HttpRequestMessage
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TSerializeTo
+    nameWithType: TSerializeTo
+    fullName: TSerializeTo
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.#ctor*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.#ctor
+  name: SimbaChain
+  nameWithType: SimbaChain.SimbaChain
+  fullName: libSimba.Net.Simba.SimbaChain.SimbaChain
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: libSimba.Net.Wallet.WalletBase
+  commentId: T:libSimba.Net.Wallet.WalletBase
+  parent: libSimba.Net.Wallet
+  name: WalletBase
+  nameWithType: WalletBase
+  fullName: libSimba.Net.Wallet.WalletBase
+- uid: libSimba.Net.Wallet
+  commentId: N:libSimba.Net.Wallet
+  name: libSimba.Net.Wallet
+  nameWithType: libSimba.Net.Wallet
+  fullName: libSimba.Net.Wallet
+- uid: libSimba.Net.Simba.SimbaBase.Initialize(System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.Initialize(System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: Initialize(CancellationToken)
+  nameWithType: SimbaBase.Initialize(CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.Initialize(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.Initialize(System.Threading.CancellationToken)
+    name: Initialize
+    nameWithType: SimbaBase.Initialize
+    fullName: libSimba.Net.Simba.SimbaBase.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.Initialize(System.Threading.CancellationToken)
+    name: Initialize
+    nameWithType: SimbaBase.Initialize
+    fullName: libSimba.Net.Simba.SimbaBase.Initialize
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.Initialize*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.Initialize
+  name: Initialize
+  nameWithType: SimbaChain.Initialize
+  fullName: libSimba.Net.Simba.SimbaChain.Initialize
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: libSimba.Net.Simba.SimbaBase.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: CallMethod(String, Dictionary<String, Object>, CancellationToken)
+  nameWithType: SimbaBase.CallMethod(String, Dictionary<String, Object>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.CallMethod(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.CallMethod(String, Dictionary(Of String, Object), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.CallMethod(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: CallMethod(String, Dictionary(Of String, Object), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+    name: CallMethod
+    nameWithType: SimbaBase.CallMethod
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethod(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+    name: CallMethod
+    nameWithType: SimbaBase.CallMethod
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.CallMethod*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.CallMethod
+  name: CallMethod
+  nameWithType: SimbaChain.CallMethod
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethod
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Object>
+  nameWithType: Dictionary<String, Object>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+  commentId: T:System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.Transaction}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Transaction>
+  nameWithType: Task<Transaction>
+  fullName: System.Threading.Tasks.Task<libSimba.Net.Models.Transaction.Transaction>
+  nameWithType.vb: Task(Of Transaction)
+  fullName.vb: System.Threading.Tasks.Task(Of libSimba.Net.Models.Transaction.Transaction)
+  name.vb: Task(Of Transaction)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.Transaction.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: libSimba.Net.Models.Transaction.Transaction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.Transaction.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: libSimba.Net.Models.Transaction.Transaction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<Stream>, CancellationToken)
+  nameWithType: SimbaBase.CallMethodWithFile(String, Dictionary<String, Object>, List<Stream>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<System.IO.Stream>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Stream), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of System.IO.Stream), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Stream), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.Stream},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.CallMethodWithFile*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.CallMethodWithFile
+  name: CallMethodWithFile
+  nameWithType: SimbaChain.CallMethodWithFile
+  fullName: libSimba.Net.Simba.SimbaChain.CallMethodWithFile
+- uid: System.Collections.Generic.List{System.IO.Stream}
+  commentId: T:System.Collections.Generic.List{System.IO.Stream}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Stream>
+  nameWithType: List<Stream>
+  fullName: System.Collections.Generic.List<System.IO.Stream>
+  nameWithType.vb: List(Of Stream)
+  fullName.vb: System.Collections.Generic.List(Of System.IO.Stream)
+  name.vb: List(Of Stream)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Models.FileData
+  commentId: T:libSimba.Net.Models.FileData
+  name: FileData
+  nameWithType: FileData
+  fullName: libSimba.Net.Models.FileData
+- uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<FileData>, CancellationToken)
+  nameWithType: SimbaBase.CallMethodWithFile(String, Dictionary<String, Object>, List<FileData>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<libSimba.Net.Models.FileData>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileData), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of libSimba.Net.Models.FileData), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileData), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.FileData
+    name: FileData
+    nameWithType: FileData
+    fullName: libSimba.Net.Models.FileData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{libSimba.Net.Models.FileData},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.FileData
+    name: FileData
+    nameWithType: FileData
+    fullName: libSimba.Net.Models.FileData
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{libSimba.Net.Models.FileData}
+  commentId: T:System.Collections.Generic.List{libSimba.Net.Models.FileData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<FileData>
+  nameWithType: List<FileData>
+  fullName: System.Collections.Generic.List<libSimba.Net.Models.FileData>
+  nameWithType.vb: List(Of FileData)
+  fullName.vb: System.Collections.Generic.List(Of libSimba.Net.Models.FileData)
+  name.vb: List(Of FileData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.FileData
+    name: FileData
+    nameWithType: FileData
+    fullName: libSimba.Net.Models.FileData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.FileData
+    name: FileData
+    nameWithType: FileData
+    fullName: libSimba.Net.Models.FileData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IO.FileInfo
+  commentId: T:System.IO.FileInfo
+  isExternal: true
+- uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<FileInfo>, CancellationToken)
+  nameWithType: SimbaBase.CallMethodWithFile(String, Dictionary<String, Object>, List<FileInfo>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<System.IO.FileInfo>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileInfo), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of System.IO.FileInfo), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of FileInfo), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.FileInfo
+    name: FileInfo
+    nameWithType: FileInfo
+    fullName: System.IO.FileInfo
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.IO.FileInfo},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.FileInfo
+    name: FileInfo
+    nameWithType: FileInfo
+    fullName: System.IO.FileInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.IO.FileInfo}
+  commentId: T:System.Collections.Generic.List{System.IO.FileInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<FileInfo>
+  nameWithType: List<FileInfo>
+  fullName: System.Collections.Generic.List<System.IO.FileInfo>
+  nameWithType.vb: List(Of FileInfo)
+  fullName.vb: System.Collections.Generic.List(Of System.IO.FileInfo)
+  name.vb: List(Of FileInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.FileInfo
+    name: FileInfo
+    nameWithType: FileInfo
+    fullName: System.IO.FileInfo
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.FileInfo
+    name: FileInfo
+    nameWithType: FileInfo
+    fullName: System.IO.FileInfo
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: CallMethodWithFile(String, Dictionary<String, Object>, List<Byte[]>, CancellationToken)
+  nameWithType: SimbaBase.CallMethodWithFile(String, Dictionary<String, Object>, List<Byte[]>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Collections.Generic.List<System.Byte[]>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Byte()), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Collections.Generic.List(Of System.Byte()), System.Threading.CancellationToken)
+  name.vb: CallMethodWithFile(String, Dictionary(Of String, Object), List(Of Byte()), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CallMethodWithFile(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.List{System.Byte[]},System.Threading.CancellationToken)
+    name: CallMethodWithFile
+    nameWithType: SimbaBase.CallMethodWithFile
+    fullName: libSimba.Net.Simba.SimbaBase.CallMethodWithFile
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.Byte[]}
+  commentId: T:System.Collections.Generic.List{System.Byte[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Byte[]>
+  nameWithType: List<Byte[]>
+  fullName: System.Collections.Generic.List<System.Byte[]>
+  nameWithType.vb: List(Of Byte())
+  fullName.vb: System.Collections.Generic.List(Of System.Byte())
+  name.vb: List(Of Byte())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetMethodTransactions(String, Dictionary<String, Object>, CancellationToken)
+  nameWithType: SimbaBase.GetMethodTransactions(String, Dictionary<String, Object>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String, System.Collections.Generic.Dictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.GetMethodTransactions(String, Dictionary(Of String, Object), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String, System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: GetMethodTransactions(String, Dictionary(Of String, Object), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+    name: GetMethodTransactions
+    nameWithType: SimbaBase.GetMethodTransactions
+    fullName: libSimba.Net.Simba.SimbaBase.GetMethodTransactions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetMethodTransactions(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+    name: GetMethodTransactions
+    nameWithType: SimbaBase.GetMethodTransactions
+    fullName: libSimba.Net.Simba.SimbaBase.GetMethodTransactions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetMethodTransactions*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetMethodTransactions
+  name: GetMethodTransactions
+  nameWithType: SimbaChain.GetMethodTransactions
+  fullName: libSimba.Net.Simba.SimbaChain.GetMethodTransactions
+- uid: System.Threading.Tasks.Task{libSimba.Net.Models.PagedResponse{libSimba.Net.Models.Transaction.Transaction}}
+  commentId: T:System.Threading.Tasks.Task{libSimba.Net.Models.PagedResponse{libSimba.Net.Models.Transaction.Transaction}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PagedResponse<Transaction>>
+  nameWithType: Task<PagedResponse<Transaction>>
+  fullName: System.Threading.Tasks.Task<libSimba.Net.Models.PagedResponse<libSimba.Net.Models.Transaction.Transaction>>
+  nameWithType.vb: Task(Of PagedResponse(Of Transaction))
+  fullName.vb: System.Threading.Tasks.Task(Of libSimba.Net.Models.PagedResponse(Of libSimba.Net.Models.Transaction.Transaction))
+  name.vb: Task(Of PagedResponse(Of Transaction))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.PagedResponse`1
+    name: PagedResponse
+    nameWithType: PagedResponse
+    fullName: libSimba.Net.Models.PagedResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.Transaction.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: libSimba.Net.Models.Transaction.Transaction
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.PagedResponse`1
+    name: PagedResponse
+    nameWithType: PagedResponse
+    fullName: libSimba.Net.Models.PagedResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.Transaction.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: libSimba.Net.Models.Transaction.Transaction
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: CheckTransactionStatus(String, CancellationToken)
+  nameWithType: SimbaBase.CheckTransactionStatus(String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+    name: CheckTransactionStatus
+    nameWithType: SimbaBase.CheckTransactionStatus
+    fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus(System.String,System.Threading.CancellationToken)
+    name: CheckTransactionStatus
+    nameWithType: SimbaBase.CheckTransactionStatus
+    fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionStatus
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.CheckTransactionStatus*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.CheckTransactionStatus
+  name: CheckTransactionStatus
+  nameWithType: SimbaChain.CheckTransactionStatus
+  fullName: libSimba.Net.Simba.SimbaChain.CheckTransactionStatus
+- uid: System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.TransactionStatus}
+  commentId: T:System.Threading.Tasks.Task{libSimba.Net.Models.Transaction.TransactionStatus}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TransactionStatus>
+  nameWithType: Task<TransactionStatus>
+  fullName: System.Threading.Tasks.Task<libSimba.Net.Models.Transaction.TransactionStatus>
+  nameWithType.vb: Task(Of TransactionStatus)
+  fullName.vb: System.Threading.Tasks.Task(Of libSimba.Net.Models.Transaction.TransactionStatus)
+  name.vb: Task(Of TransactionStatus)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.Transaction.TransactionStatus
+    name: TransactionStatus
+    nameWithType: TransactionStatus
+    fullName: libSimba.Net.Models.Transaction.TransactionStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.Transaction.TransactionStatus
+    name: TransactionStatus
+    nameWithType: TransactionStatus
+    fullName: libSimba.Net.Models.Transaction.TransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  parent: libSimba.Net.Simba.SimbaBase
+  name: CheckTransactionStatusFromObject(Transaction)
+  nameWithType: SimbaBase.CheckTransactionStatusFromObject(Transaction)
+  fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+    name: CheckTransactionStatusFromObject
+    nameWithType: SimbaBase.CheckTransactionStatusFromObject
+    fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: libSimba.Net.Models.Transaction.Transaction
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject(libSimba.Net.Models.Transaction.Transaction)
+    name: CheckTransactionStatusFromObject
+    nameWithType: SimbaBase.CheckTransactionStatusFromObject
+    fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionStatusFromObject
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.Transaction
+    name: Transaction
+    nameWithType: Transaction
+    fullName: libSimba.Net.Models.Transaction.Transaction
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject
+  name: CheckTransactionStatusFromObject
+  nameWithType: SimbaChain.CheckTransactionStatusFromObject
+  fullName: libSimba.Net.Simba.SimbaChain.CheckTransactionStatusFromObject
+- uid: libSimba.Net.Models.Transaction.Transaction
+  commentId: T:libSimba.Net.Models.Transaction.Transaction
+  parent: libSimba.Net.Models.Transaction
+  name: Transaction
+  nameWithType: Transaction
+  fullName: libSimba.Net.Models.Transaction.Transaction
+- uid: libSimba.Net.Models.Transaction.TransactionStatus
+  commentId: T:libSimba.Net.Models.Transaction.TransactionStatus
+  parent: libSimba.Net.Models.Transaction
+  name: TransactionStatus
+  nameWithType: TransactionStatus
+  fullName: libSimba.Net.Models.Transaction.TransactionStatus
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction
+- uid: libSimba.Net.Simba.SimbaBase.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  commentId: M:libSimba.Net.Simba.SimbaBase.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  parent: libSimba.Net.Simba.SimbaBase
+  name: CheckTransactionDone(TransactionStatus)
+  nameWithType: SimbaBase.CheckTransactionDone(TransactionStatus)
+  fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+    name: CheckTransactionDone
+    nameWithType: SimbaBase.CheckTransactionDone
+    fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionDone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.TransactionStatus
+    name: TransactionStatus
+    nameWithType: TransactionStatus
+    fullName: libSimba.Net.Models.Transaction.TransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.CheckTransactionDone(libSimba.Net.Models.Transaction.TransactionStatus)
+    name: CheckTransactionDone
+    nameWithType: SimbaBase.CheckTransactionDone
+    fullName: libSimba.Net.Simba.SimbaBase.CheckTransactionDone
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.TransactionStatus
+    name: TransactionStatus
+    nameWithType: TransactionStatus
+    fullName: libSimba.Net.Models.Transaction.TransactionStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.CheckTransactionDone*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.CheckTransactionDone
+  name: CheckTransactionDone
+  nameWithType: SimbaChain.CheckTransactionDone
+  fullName: libSimba.Net.Simba.SimbaChain.CheckTransactionDone
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: libSimba.Net.Simba.SimbaBase.GetTransaction(System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetTransaction(System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetTransaction(String, CancellationToken)
+  nameWithType: SimbaBase.GetTransaction(String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetTransaction(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetTransaction(System.String,System.Threading.CancellationToken)
+    name: GetTransaction
+    nameWithType: SimbaBase.GetTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetTransaction(System.String,System.Threading.CancellationToken)
+    name: GetTransaction
+    nameWithType: SimbaBase.GetTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetTransaction*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetTransaction
+  name: GetTransaction
+  nameWithType: SimbaChain.GetTransaction
+  fullName: libSimba.Net.Simba.SimbaChain.GetTransaction
+- uid: libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetTransactions(Dictionary<String, Object>, CancellationToken)
+  nameWithType: SimbaBase.GetTransactions(Dictionary<String, Object>, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary<System.String, System.Object>, System.Threading.CancellationToken)
+  nameWithType.vb: SimbaBase.GetTransactions(Dictionary(Of String, Object), CancellationToken)
+  fullName.vb: libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary(Of System.String, System.Object), System.Threading.CancellationToken)
+  name.vb: GetTransactions(Dictionary(Of String, Object), CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+    name: GetTransactions
+    nameWithType: SimbaBase.GetTransactions
+    fullName: libSimba.Net.Simba.SimbaBase.GetTransactions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetTransactions(System.Collections.Generic.Dictionary{System.String,System.Object},System.Threading.CancellationToken)
+    name: GetTransactions
+    nameWithType: SimbaBase.GetTransactions
+    fullName: libSimba.Net.Simba.SimbaBase.GetTransactions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetTransactions*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetTransactions
+  name: GetTransactions
+  nameWithType: SimbaChain.GetTransactions
+  fullName: libSimba.Net.Simba.SimbaChain.GetTransactions
+- uid: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetBundleMetadataForTransaction(String, CancellationToken)
+  nameWithType: SimbaBase.GetBundleMetadataForTransaction(String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction(System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+    name: GetBundleMetadataForTransaction
+    nameWithType: SimbaBase.GetBundleMetadataForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction(System.String,System.Threading.CancellationToken)
+    name: GetBundleMetadataForTransaction
+    nameWithType: SimbaBase.GetBundleMetadataForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetBundleMetadataForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction
+  name: GetBundleMetadataForTransaction
+  nameWithType: SimbaChain.GetBundleMetadataForTransaction
+  fullName: libSimba.Net.Simba.SimbaChain.GetBundleMetadataForTransaction
+- uid: System.Threading.Tasks.Task{libSimba.Net.Models.BundleManifest}
+  commentId: T:System.Threading.Tasks.Task{libSimba.Net.Models.BundleManifest}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<BundleManifest>
+  nameWithType: Task<BundleManifest>
+  fullName: System.Threading.Tasks.Task<libSimba.Net.Models.BundleManifest>
+  nameWithType.vb: Task(Of BundleManifest)
+  fullName.vb: System.Threading.Tasks.Task(Of libSimba.Net.Models.BundleManifest)
+  name.vb: Task(Of BundleManifest)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.BundleManifest
+    name: BundleManifest
+    nameWithType: BundleManifest
+    fullName: libSimba.Net.Models.BundleManifest
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.BundleManifest
+    name: BundleManifest
+    nameWithType: BundleManifest
+    fullName: libSimba.Net.Models.BundleManifest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetBundleForTransaction(String, Boolean, CancellationToken)
+  nameWithType: SimbaBase.GetBundleForTransaction(String, Boolean, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction(System.String, System.Boolean, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: GetBundleForTransaction
+    nameWithType: SimbaBase.GetBundleForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: GetBundleForTransaction
+    nameWithType: SimbaBase.GetBundleForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetBundleForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetBundleForTransaction*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetBundleForTransaction
+  name: GetBundleForTransaction
+  nameWithType: SimbaChain.GetBundleForTransaction
+  fullName: libSimba.Net.Simba.SimbaChain.GetBundleForTransaction
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetFileFromBundleForTransaction(String, Int32, Boolean, CancellationToken)
+  nameWithType: SimbaBase.GetFileFromBundleForTransaction(String, Int32, Boolean, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction(System.String, System.Int32, System.Boolean, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+    name: GetFileFromBundleForTransaction
+    nameWithType: SimbaBase.GetFileFromBundleForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction(System.String,System.Int32,System.Boolean,System.Threading.CancellationToken)
+    name: GetFileFromBundleForTransaction
+    nameWithType: SimbaBase.GetFileFromBundleForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetFileFromBundleForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction
+  name: GetFileFromBundleForTransaction
+  nameWithType: SimbaChain.GetFileFromBundleForTransaction
+  fullName: libSimba.Net.Simba.SimbaChain.GetFileFromBundleForTransaction
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetFileFromBundleByNameForTransaction(String, String, CancellationToken)
+  nameWithType: SimbaBase.GetFileFromBundleByNameForTransaction(String, String, CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction(System.String, System.String, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+    name: GetFileFromBundleByNameForTransaction
+    nameWithType: SimbaBase.GetFileFromBundleByNameForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction(System.String,System.String,System.Threading.CancellationToken)
+    name: GetFileFromBundleByNameForTransaction
+    nameWithType: SimbaBase.GetFileFromBundleByNameForTransaction
+    fullName: libSimba.Net.Simba.SimbaBase.GetFileFromBundleByNameForTransaction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction
+  name: GetFileFromBundleByNameForTransaction
+  nameWithType: SimbaChain.GetFileFromBundleByNameForTransaction
+  fullName: libSimba.Net.Simba.SimbaChain.GetFileFromBundleByNameForTransaction
+- uid: libSimba.Net.Simba.SimbaBase.GetBalance(System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.GetBalance(System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: GetBalance(CancellationToken)
+  nameWithType: SimbaBase.GetBalance(CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.GetBalance(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.GetBalance(System.Threading.CancellationToken)
+    name: GetBalance
+    nameWithType: SimbaBase.GetBalance
+    fullName: libSimba.Net.Simba.SimbaBase.GetBalance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.GetBalance(System.Threading.CancellationToken)
+    name: GetBalance
+    nameWithType: SimbaBase.GetBalance
+    fullName: libSimba.Net.Simba.SimbaBase.GetBalance
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.GetBalance*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.GetBalance
+  name: GetBalance
+  nameWithType: SimbaChain.GetBalance
+  fullName: libSimba.Net.Simba.SimbaChain.GetBalance
+- uid: System.Threading.Tasks.Task{libSimba.Net.Models.Balance}
+  commentId: T:System.Threading.Tasks.Task{libSimba.Net.Models.Balance}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Balance>
+  nameWithType: Task<Balance>
+  fullName: System.Threading.Tasks.Task<libSimba.Net.Models.Balance>
+  nameWithType.vb: Task(Of Balance)
+  fullName.vb: System.Threading.Tasks.Task(Of libSimba.Net.Models.Balance)
+  name.vb: Task(Of Balance)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.Balance
+    name: Balance
+    nameWithType: Balance
+    fullName: libSimba.Net.Models.Balance
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.Balance
+    name: Balance
+    nameWithType: Balance
+    fullName: libSimba.Net.Models.Balance
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaBase.AddFunds(System.Threading.CancellationToken)
+  commentId: M:libSimba.Net.Simba.SimbaBase.AddFunds(System.Threading.CancellationToken)
+  parent: libSimba.Net.Simba.SimbaBase
+  isExternal: true
+  name: AddFunds(CancellationToken)
+  nameWithType: SimbaBase.AddFunds(CancellationToken)
+  fullName: libSimba.Net.Simba.SimbaBase.AddFunds(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: libSimba.Net.Simba.SimbaBase.AddFunds(System.Threading.CancellationToken)
+    name: AddFunds
+    nameWithType: SimbaBase.AddFunds
+    fullName: libSimba.Net.Simba.SimbaBase.AddFunds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Simba.SimbaBase.AddFunds(System.Threading.CancellationToken)
+    name: AddFunds
+    nameWithType: SimbaBase.AddFunds
+    fullName: libSimba.Net.Simba.SimbaBase.AddFunds
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    nameWithType: CancellationToken
+    fullName: System.Threading.CancellationToken
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Simba.SimbaChain.AddFunds*
+  commentId: Overload:libSimba.Net.Simba.SimbaChain.AddFunds
+  name: AddFunds
+  nameWithType: SimbaChain.AddFunds
+  fullName: libSimba.Net.Simba.SimbaChain.AddFunds
+- uid: System.Threading.Tasks.Task{libSimba.Net.Models.Funds}
+  commentId: T:System.Threading.Tasks.Task{libSimba.Net.Models.Funds}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Funds>
+  nameWithType: Task<Funds>
+  fullName: System.Threading.Tasks.Task<libSimba.Net.Models.Funds>
+  nameWithType.vb: Task(Of Funds)
+  fullName.vb: System.Threading.Tasks.Task(Of libSimba.Net.Models.Funds)
+  name.vb: Task(Of Funds)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: libSimba.Net.Models.Funds
+    name: Funds
+    nameWithType: Funds
+    fullName: libSimba.Net.Models.Funds
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: libSimba.Net.Models.Funds
+    name: Funds
+    nameWithType: Funds
+    fullName: libSimba.Net.Models.Funds
+  - name: )
+    nameWithType: )
+    fullName: )

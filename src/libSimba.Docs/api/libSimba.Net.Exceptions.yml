@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Exceptions
+  commentId: N:libSimba.Net.Exceptions
+  id: libSimba.Net.Exceptions
+  children:
+  - libSimba.Net.Exceptions.HttpException
+  langs:
+  - csharp
+  - vb
+  name: libSimba.Net.Exceptions
+  nameWithType: libSimba.Net.Exceptions
+  fullName: libSimba.Net.Exceptions
+  type: Namespace
+  assemblies:
+  - libSimba.Net
+references:
+- uid: libSimba.Net.Exceptions.HttpException
+  commentId: T:libSimba.Net.Exceptions.HttpException
+  name: HttpException
+  nameWithType: HttpException
+  fullName: libSimba.Net.Exceptions.HttpException

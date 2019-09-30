@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Models.Balance
+  commentId: T:libSimba.Net.Models.Balance
+  id: Balance
+  parent: libSimba.Net.Models
+  children:
+  - libSimba.Net.Models.Balance.Amount
+  - libSimba.Net.Models.Balance.Currency
+  - libSimba.Net.Models.Balance.POA
+  langs:
+  - csharp
+  - vb
+  name: Balance
+  nameWithType: Balance
+  fullName: libSimba.Net.Models.Balance
+  type: Class
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Balance.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Balance
+    path: ../libSimba.Net/Models/Balance.cs
+    startLine: 9
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  summary: "\nRepresents the response to a GetBalance call\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonObject(MemberSerialization.OptIn)]
+
+      public class Balance : Serializable
+    content.vb: >-
+      <JsonObject(MemberSerialization.OptIn)>
+
+      Public Class Balance
+          Inherits Serializable
+  inheritance:
+  - System.Object
+  - libSimba.Net.Models.Transaction.Serializable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Newtonsoft.Json.JsonObjectAttribute
+    ctor: Newtonsoft.Json.JsonObjectAttribute.#ctor(Newtonsoft.Json.MemberSerialization)
+    arguments:
+    - type: Newtonsoft.Json.MemberSerialization
+      value: 1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: libSimba.Net.Models.Balance.Amount
+  commentId: P:libSimba.Net.Models.Balance.Amount
+  id: Amount
+  parent: libSimba.Net.Models.Balance
+  langs:
+  - csharp
+  - vb
+  name: Amount
+  nameWithType: Balance.Amount
+  fullName: libSimba.Net.Models.Balance.Amount
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Balance.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Amount
+    path: ../libSimba.Net/Models/Balance.cs
+    startLine: 12
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: >-
+      [JsonProperty("amount")]
+
+      public BigInteger Amount { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: >-
+      <JsonProperty("amount")>
+
+      Public Property Amount As BigInteger
+  overload: libSimba.Net.Models.Balance.Amount*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: amount
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Balance.Currency
+  commentId: P:libSimba.Net.Models.Balance.Currency
+  id: Currency
+  parent: libSimba.Net.Models.Balance
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: Balance.Currency
+  fullName: libSimba.Net.Models.Balance.Currency
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Balance.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Currency
+    path: ../libSimba.Net/Models/Balance.cs
+    startLine: 14
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: >-
+      [JsonProperty("currency")]
+
+      public string Currency { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("currency")>
+
+      Public Property Currency As String
+  overload: libSimba.Net.Models.Balance.Currency*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: currency
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Balance.POA
+  commentId: P:libSimba.Net.Models.Balance.POA
+  id: POA
+  parent: libSimba.Net.Models.Balance
+  langs:
+  - csharp
+  - vb
+  name: POA
+  nameWithType: Balance.POA
+  fullName: libSimba.Net.Models.Balance.POA
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Balance.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: POA
+    path: ../libSimba.Net/Models/Balance.cs
+    startLine: 16
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: public bool POA { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property POA As Boolean
+  overload: libSimba.Net.Models.Balance.POA*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: libSimba.Net.Models
+  commentId: N:libSimba.Net.Models
+  name: libSimba.Net.Models
+  nameWithType: libSimba.Net.Models
+  fullName: libSimba.Net.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: libSimba.Net.Models.Transaction.Serializable
+  commentId: T:libSimba.Net.Models.Transaction.Serializable
+  parent: libSimba.Net.Models.Transaction
+  name: Serializable
+  nameWithType: Serializable
+  fullName: libSimba.Net.Models.Transaction.Serializable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction
+- uid: libSimba.Net.Models.Balance.Amount*
+  commentId: Overload:libSimba.Net.Models.Balance.Amount
+  name: Amount
+  nameWithType: Balance.Amount
+  fullName: libSimba.Net.Models.Balance.Amount
+- uid: System.Numerics.BigInteger
+  commentId: T:System.Numerics.BigInteger
+  parent: System.Numerics
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: System.Numerics.BigInteger
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+- uid: libSimba.Net.Models.Balance.Currency*
+  commentId: Overload:libSimba.Net.Models.Balance.Currency
+  name: Currency
+  nameWithType: Balance.Currency
+  fullName: libSimba.Net.Models.Balance.Currency
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: libSimba.Net.Models.Balance.POA*
+  commentId: Overload:libSimba.Net.Models.Balance.POA
+  name: POA
+  nameWithType: Balance.POA
+  fullName: libSimba.Net.Models.Balance.POA
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

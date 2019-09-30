@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Welcome to libsimba.net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Welcome to libsimba.net ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 align="center">Welcome to libsimba.net</h1>
+
+<p>
+  <a href="https://www.nuget.org/packages/libsimba.net">
+    <img alt="npm" src="https://img.shields.io/nuget/dt/libsimba.net?style=flat">  
+  </a>
+  <a href="https://simbachain.github.io/libsimba.net">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=flat" target="_blank">
+  </a>
+  <a href="https://github.com/SIMBAChain/libsimba.net/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat" target="_blank">
+  </a>
+  <img alt="azure" src="https://dev.azure.com/SimbaChain/libSimba/_apis/build/status/SIMBAChain.libsimba.net-develop?branchName=develop">
+</p>
+<blockquote>
+<p>libsimba.net is a library simplifying the use of SIMBAChain APIs. We aim to abstract away the various blockchain concepts, reducing the necessary time needed to get to working code.</p>
+</blockquote>
+<h3 id="-homepage"><a href="https://github.com/simbachain/libsimba.net">🏠 Homepage</a></h3>
+<h3 id="-documentation"><a href="https://simbachain.github.io/libsimba.net">📝 Documentation</a></h3>
+<h2 id="install">Install</h2>
+<h4 id="net-cli">.NET CLI</h4>
+<pre><code class="lang-ps">dotnet add package LibSimba.Net
+</code></pre>
+<h4 id="nuget-package-manger">Nuget Package Manger</h4>
+<pre><code class="lang-ps">Install-Package LibSimba.Net
+</code></pre>
+<h3 id="basic-usage">Basic usage</h3>
+<h4 id="get-an-instance-of-filewallet">Get an instance of <code>FileWallet</code></h4>
+<pre><code class="lang-c#">var wallet = new FileWallet(&quot;wallet.json&quot;, null);
+if (await Wallet.WalletExists())
+{
+    await Wallet.UnlockWallet(&quot;test1234&quot;);
+}
+else
+{
+    await Wallet.GenerateWallet(&quot;test1234&quot;);
+}
+</code></pre>
+<h4 id="get-an-instance-of-simbachain">Get an instance of <code>Simbachain</code></h4>
+<pre><code class="lang-c#">var simba = await SimbaBase.GetSimbaInstance(
+    &quot;https://api.simbachain.com/v1/libSimba-SimbaChat-Quorum/&quot;,
+    wallet,
+    &quot;04d1729f7144873851a745d2ae85639f55c8e3de5aea626a2bcd0055c01ba6fc&quot;);
+</code></pre>
+<h4 id="call-a-method">Call a method</h4>
+<pre><code class="lang-c#">var parameters = new Dictionary&lt;string, object&gt;()
+{
+    {&quot;assetId&quot;, &quot;0x00&quot;},
+    {&quot;name&quot;, &quot;C# Test Room&quot;},
+    {&quot;createdBy&quot;, &quot;Kieran Evans&quot;}
+};
+
+var txn = await Simba.CallMethod(&quot;createRoom&quot;, parameters);
+
+Console.WriteLine($&quot;Transaction ID {txn.ID}&quot;);
+
+//Wait for the transaction to deploy to the blockchain
+var deployedTxn = await Simba.WaitForSuccessOrError(txn.ID);
+
+Console.WriteLine($&quot;Transaction Hash {deployedTxn .TransactionHash}&quot;);
+</code></pre>
+<h2 id="examples">Examples</h2>
+<p>See <a href="https://github.com/SIMBAChain/libsimba.net/src/libSimba.Example">here</a></p>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions, issues and feature requests are welcome!<br>Feel free to check <a href="https://github.com/simbachain/libsimba.net/issues">issues page</a>.</p>
+<h2 id="license">License</h2>
+<p>Copyright © 2019 <a href="https://simbachain.com/">SIMBAChain Inc</a>.<br>
+This project is <a href="https://github.com/SIMBAChain/libsimba.net/blob/master/LICENSE">MIT</a> licensed.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ITAMCO/libsimba.net/blob/master/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

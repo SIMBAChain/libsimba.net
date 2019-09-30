@@ -1,0 +1,1053 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Models.Transaction.Receipt
+  commentId: T:libSimba.Net.Models.Transaction.Receipt
+  id: Receipt
+  parent: libSimba.Net.Models.Transaction
+  children:
+  - libSimba.Net.Models.Transaction.Receipt.BlockHash
+  - libSimba.Net.Models.Transaction.Receipt.BlockNumber
+  - libSimba.Net.Models.Transaction.Receipt.ContractAddress
+  - libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed
+  - libSimba.Net.Models.Transaction.Receipt.From
+  - libSimba.Net.Models.Transaction.Receipt.GasUsed
+  - libSimba.Net.Models.Transaction.Receipt.Logs
+  - libSimba.Net.Models.Transaction.Receipt.LogsBloom
+  - libSimba.Net.Models.Transaction.Receipt.Status
+  - libSimba.Net.Models.Transaction.Receipt.To
+  - libSimba.Net.Models.Transaction.Receipt.TransactionHash
+  - libSimba.Net.Models.Transaction.Receipt.TransactionIndex
+  langs:
+  - csharp
+  - vb
+  name: Receipt
+  nameWithType: Receipt
+  fullName: libSimba.Net.Models.Transaction.Receipt
+  type: Class
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Receipt
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 8
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  summary: "\nReceipt\n"
+  example: []
+  syntax:
+    content: >-
+      [JsonObject(MemberSerialization.OptIn)]
+
+      public class Receipt
+    content.vb: >-
+      <JsonObject(MemberSerialization.OptIn)>
+
+      Public Class Receipt
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Newtonsoft.Json.JsonObjectAttribute
+    ctor: Newtonsoft.Json.JsonObjectAttribute.#ctor(Newtonsoft.Json.MemberSerialization)
+    arguments:
+    - type: Newtonsoft.Json.MemberSerialization
+      value: 1
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: libSimba.Net.Models.Transaction.Receipt.To
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.To
+  id: To
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: Receipt.To
+  fullName: libSimba.Net.Models.Transaction.Receipt.To
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: To
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 11
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("to")]
+
+      public string To { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("to")>
+
+      Public Property To As String
+  overload: libSimba.Net.Models.Transaction.Receipt.To*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: to
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.From
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.From
+  id: From
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: From
+  nameWithType: Receipt.From
+  fullName: libSimba.Net.Models.Transaction.Receipt.From
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: From
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 13
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("from")]
+
+      public string From { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("from")>
+
+      Public Property From As String
+  overload: libSimba.Net.Models.Transaction.Receipt.From*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: from
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.Logs
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.Logs
+  id: Logs
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: Logs
+  nameWithType: Receipt.Logs
+  fullName: libSimba.Net.Models.Transaction.Receipt.Logs
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Logs
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 15
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("logs")]
+
+      public string[] Logs { get; set; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: >-
+      <JsonProperty("logs")>
+
+      Public Property Logs As String()
+  overload: libSimba.Net.Models.Transaction.Receipt.Logs*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: logs
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.Status
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.Status
+  id: Status
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: Receipt.Status
+  fullName: libSimba.Net.Models.Transaction.Receipt.Status
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Status
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 17
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("status")]
+
+      public bool Status { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonProperty("status")>
+
+      Public Property Status As Boolean
+  overload: libSimba.Net.Models.Transaction.Receipt.Status*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: status
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.GasUsed
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.GasUsed
+  id: GasUsed
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: GasUsed
+  nameWithType: Receipt.GasUsed
+  fullName: libSimba.Net.Models.Transaction.Receipt.GasUsed
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GasUsed
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 19
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty(PropertyName = "gasUsed")]
+
+      public BigInteger GasUsed { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: >-
+      <JsonProperty(PropertyName:="gasUsed")>
+
+      Public Property GasUsed As BigInteger
+  overload: libSimba.Net.Models.Transaction.Receipt.GasUsed*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: PropertyName
+      type: System.String
+      value: gasUsed
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.BlockHash
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.BlockHash
+  id: BlockHash
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: BlockHash
+  nameWithType: Receipt.BlockHash
+  fullName: libSimba.Net.Models.Transaction.Receipt.BlockHash
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: BlockHash
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 22
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("blockHash")]
+
+      public string BlockHash { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("blockHash")>
+
+      Public Property BlockHash As String
+  overload: libSimba.Net.Models.Transaction.Receipt.BlockHash*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: blockHash
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.LogsBloom
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.LogsBloom
+  id: LogsBloom
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: LogsBloom
+  nameWithType: Receipt.LogsBloom
+  fullName: libSimba.Net.Models.Transaction.Receipt.LogsBloom
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: LogsBloom
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 24
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("logsBloom")]
+
+      public string LogsBloom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("logsBloom")>
+
+      Public Property LogsBloom As String
+  overload: libSimba.Net.Models.Transaction.Receipt.LogsBloom*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: logsBloom
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.BlockNumber
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.BlockNumber
+  id: BlockNumber
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: BlockNumber
+  nameWithType: Receipt.BlockNumber
+  fullName: libSimba.Net.Models.Transaction.Receipt.BlockNumber
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: BlockNumber
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 26
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty(PropertyName = "blockNumber")]
+
+      public BigInteger BlockNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: >-
+      <JsonProperty(PropertyName:="blockNumber")>
+
+      Public Property BlockNumber As BigInteger
+  overload: libSimba.Net.Models.Transaction.Receipt.BlockNumber*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: PropertyName
+      type: System.String
+      value: blockNumber
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.ContractAddress
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.ContractAddress
+  id: ContractAddress
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: ContractAddress
+  nameWithType: Receipt.ContractAddress
+  fullName: libSimba.Net.Models.Transaction.Receipt.ContractAddress
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: ContractAddress
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 29
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("contractAddress")]
+
+      public string ContractAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("contractAddress")>
+
+      Public Property ContractAddress As String
+  overload: libSimba.Net.Models.Transaction.Receipt.ContractAddress*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: contractAddress
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.TransactionHash
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.TransactionHash
+  id: TransactionHash
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: TransactionHash
+  nameWithType: Receipt.TransactionHash
+  fullName: libSimba.Net.Models.Transaction.Receipt.TransactionHash
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: TransactionHash
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 31
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty("transactionHash")]
+
+      public string TransactionHash { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonProperty("transactionHash")>
+
+      Public Property TransactionHash As String
+  overload: libSimba.Net.Models.Transaction.Receipt.TransactionHash*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: transactionHash
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.TransactionIndex
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.TransactionIndex
+  id: TransactionIndex
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: TransactionIndex
+  nameWithType: Receipt.TransactionIndex
+  fullName: libSimba.Net.Models.Transaction.Receipt.TransactionIndex
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: TransactionIndex
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 33
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty(PropertyName = "transactionIndex")]
+
+      public BigInteger TransactionIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: >-
+      <JsonProperty(PropertyName:="transactionIndex")>
+
+      Public Property TransactionIndex As BigInteger
+  overload: libSimba.Net.Models.Transaction.Receipt.TransactionIndex*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: PropertyName
+      type: System.String
+      value: transactionIndex
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed
+  commentId: P:libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed
+  id: CumulativeGasUsed
+  parent: libSimba.Net.Models.Transaction.Receipt
+  langs:
+  - csharp
+  - vb
+  name: CumulativeGasUsed
+  nameWithType: Receipt.CumulativeGasUsed
+  fullName: libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Models/Transaction/Receipt.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: CumulativeGasUsed
+    path: ../libSimba.Net/Models/Transaction/Receipt.cs
+    startLine: 36
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models.Transaction
+  syntax:
+    content: >-
+      [JsonProperty(PropertyName = "cumulativeGasUsed")]
+
+      public BigInteger CumulativeGasUsed { get; set; }
+    parameters: []
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: >-
+      <JsonProperty(PropertyName:="cumulativeGasUsed")>
+
+      Public Property CumulativeGasUsed As BigInteger
+  overload: libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed*
+  attributes:
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: PropertyName
+      type: System.String
+      value: cumulativeGasUsed
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: libSimba.Net.Models.Transaction.Receipt.To*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.To
+  name: To
+  nameWithType: Receipt.To
+  fullName: libSimba.Net.Models.Transaction.Receipt.To
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: libSimba.Net.Models.Transaction.Receipt.From*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.From
+  name: From
+  nameWithType: Receipt.From
+  fullName: libSimba.Net.Models.Transaction.Receipt.From
+- uid: libSimba.Net.Models.Transaction.Receipt.Logs*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.Logs
+  name: Logs
+  nameWithType: Receipt.Logs
+  fullName: libSimba.Net.Models.Transaction.Receipt.Logs
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: libSimba.Net.Models.Transaction.Receipt.Status*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.Status
+  name: Status
+  nameWithType: Receipt.Status
+  fullName: libSimba.Net.Models.Transaction.Receipt.Status
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: libSimba.Net.Models.Transaction.Receipt.GasUsed*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.GasUsed
+  name: GasUsed
+  nameWithType: Receipt.GasUsed
+  fullName: libSimba.Net.Models.Transaction.Receipt.GasUsed
+- uid: System.Numerics.BigInteger
+  commentId: T:System.Numerics.BigInteger
+  parent: System.Numerics
+  isExternal: true
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: System.Numerics.BigInteger
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+- uid: libSimba.Net.Models.Transaction.Receipt.BlockHash*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.BlockHash
+  name: BlockHash
+  nameWithType: Receipt.BlockHash
+  fullName: libSimba.Net.Models.Transaction.Receipt.BlockHash
+- uid: libSimba.Net.Models.Transaction.Receipt.LogsBloom*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.LogsBloom
+  name: LogsBloom
+  nameWithType: Receipt.LogsBloom
+  fullName: libSimba.Net.Models.Transaction.Receipt.LogsBloom
+- uid: libSimba.Net.Models.Transaction.Receipt.BlockNumber*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.BlockNumber
+  name: BlockNumber
+  nameWithType: Receipt.BlockNumber
+  fullName: libSimba.Net.Models.Transaction.Receipt.BlockNumber
+- uid: libSimba.Net.Models.Transaction.Receipt.ContractAddress*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.ContractAddress
+  name: ContractAddress
+  nameWithType: Receipt.ContractAddress
+  fullName: libSimba.Net.Models.Transaction.Receipt.ContractAddress
+- uid: libSimba.Net.Models.Transaction.Receipt.TransactionHash*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.TransactionHash
+  name: TransactionHash
+  nameWithType: Receipt.TransactionHash
+  fullName: libSimba.Net.Models.Transaction.Receipt.TransactionHash
+- uid: libSimba.Net.Models.Transaction.Receipt.TransactionIndex*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.TransactionIndex
+  name: TransactionIndex
+  nameWithType: Receipt.TransactionIndex
+  fullName: libSimba.Net.Models.Transaction.Receipt.TransactionIndex
+- uid: libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed*
+  commentId: Overload:libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed
+  name: CumulativeGasUsed
+  nameWithType: Receipt.CumulativeGasUsed
+  fullName: libSimba.Net.Models.Transaction.Receipt.CumulativeGasUsed

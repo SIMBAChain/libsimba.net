@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Files in libSimba.net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Files in libSimba.net ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="files-in-libsimbanet">Files in <code>libSimba.net</code></h1>
+
+<h2 id="calling-methods">Calling methods</h2>
+<p>Several options are available for interacting with files in <code>libSimba.net</code>.</p>
+<h4 id="byte-arrays">Byte Arrays</h4>
+<p>This method passes a simple <code>List</code> of in memory <code>byte[]</code> to the call.</p>
+<pre><code class="lang-c#">byte[] byteArray = Encoding.ASCII.GetBytes(&quot;Testing 1-2-3&quot;);
+
+var files = new List&lt;byte[]&gt;();
+files.Add(byteArray);
+
+var parameters = new Dictionary&lt;string, object&gt;()
+{
+    {&quot;assetId&quot;, &quot;0x00&quot;},
+    {&quot;message&quot;, &quot;C# Test&quot;},
+    {&quot;chatRoom&quot;, &quot;C# Test Room&quot;},
+    {&quot;sentBy&quot;, &quot;Kieran Evans&quot;}
+};
+
+var txn = await Simba.CallMethodWithFile(&quot;createRoom&quot;, parameters, files);
+
+//Wait for the transaction to deploy to the blockchain
+var deployedTxn = await Simba.WaitForSuccessOrError(txn.ID);
+Console.WriteLine($&quot;Transaction Hash {deployedTxn .TransactionHash}&quot;);
+</code></pre>
+<h4 id="fileinfo">FileInfo</h4>
+<p>This method passes a <code>List</code> of  <code>FileInfo</code> to the call. This leaves the library take care of opening and reading the files.</p>
+<pre><code class="lang-c#">var files = new List&lt;FileInfo&gt;();
+files.Add(new FileInfo(&quot;path/to/file.txt&quot;));
+
+...
+
+var txn = await Simba.CallMethodWithFile(&quot;createRoom&quot;, parameters, files);
+
+...
+</code></pre>
+<h4 id="streams">Streams</h4>
+<p>This method passes a <code>List</code> of  <code>Stream</code> to the call. This can be useful e.g. if you were receiving the file from elsewhere, such as a HTTP request, saving you from having to store the file, or host it in memory.</p>
+<pre><code class="lang-c#">var files = new List&lt;Stream&gt;();
+files.Add(new StreamReader(&quot;path/to/file.txt&quot;));
+
+...
+
+var txn = await Simba.CallMethodWithFile(&quot;createRoom&quot;, parameters, files);
+
+...
+</code></pre>
+<h4 id="filedata">FileData</h4>
+<p>This method passes a <code>List</code> of  <code>FileData</code> objects to the call. This gives a little more control of the the <code>Stream</code> method, allowing you to additionally specify file names, and mime types.</p>
+<pre><code class="lang-c#">var files = new List&lt;FileData&gt;();
+files.Add(new FileData(&quot;file.dat&quot;, &quot;application/octet-stream&quot;, aStreamInstance));
+...
+
+var txn = await Simba.CallMethodWithFile(&quot;createRoom&quot;, parameters, files);
+
+...
+</code></pre>
+<h2 id="retrieving-files">Retrieving files</h2>
+<p>Calling <code>simba.GetBundleMetadata</code> allows you to retrieve a list of files, their names, and their mime types for a transaction.</p>
+<pre><code class="lang-c#">var bundleMeta = await Simba.GetBundleMetadataForTransaction(txn.TransactionHash);
+Console.WriteLine($&quot;files count {bundleMeta.Files.Length}&quot;);
+Console.WriteLine($&quot;first file name {bundleMeta.Files[0].Name}&quot;);
+</code></pre>
+<p>Once you have the file's name you can retrieve the file with <code>simba.GetFileFromBundleByNameForTransaction</code></p>
+<pre><code class="lang-c#">using(var stream = await Simba.GetFileFromBundleByNameForTransaction(txn.TransactionHash, &quot;file.dat&quot;))
+using (var 
+output = File.OpenWrite(&quot;file.dat&quot;))
+{
+	stream.CopyTo(output);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ITAMCO/libsimba.net/blob/master/src/libSimba.Docs/articles/working_with_files.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

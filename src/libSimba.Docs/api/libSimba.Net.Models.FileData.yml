@@ -1,0 +1,539 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Models.FileData
+  commentId: T:libSimba.Net.Models.FileData
+  id: FileData
+  parent: libSimba.Net.Models
+  children:
+  - libSimba.Net.Models.FileData.#ctor(System.String,System.IO.Stream)
+  - libSimba.Net.Models.FileData.#ctor(System.String,System.String,System.IO.Stream)
+  - libSimba.Net.Models.FileData.FileName
+  - libSimba.Net.Models.FileData.MimeType
+  - libSimba.Net.Models.FileData.Stream
+  langs:
+  - csharp
+  - vb
+  name: FileData
+  nameWithType: FileData
+  fullName: libSimba.Net.Models.FileData
+  type: Class
+  source:
+    remote:
+      path: src/libSimba.Net/Models/FileData.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: FileData
+    path: ../libSimba.Net/Models/FileData.cs
+    startLine: 7
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  summary: "\nFile Data for encapsulating streams with file name and mime type for upload\n"
+  example: []
+  syntax:
+    content: public class FileData
+    content.vb: Public Class FileData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: libSimba.Net.Models.FileData.FileName
+  commentId: F:libSimba.Net.Models.FileData.FileName
+  id: FileName
+  parent: libSimba.Net.Models.FileData
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: FileData.FileName
+  fullName: libSimba.Net.Models.FileData.FileName
+  type: Field
+  source:
+    remote:
+      path: src/libSimba.Net/Models/FileData.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: FileName
+    path: ../libSimba.Net/Models/FileData.cs
+    startLine: 9
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: public string FileName
+    return:
+      type: System.String
+    content.vb: Public FileName As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.FileData.MimeType
+  commentId: F:libSimba.Net.Models.FileData.MimeType
+  id: MimeType
+  parent: libSimba.Net.Models.FileData
+  langs:
+  - csharp
+  - vb
+  name: MimeType
+  nameWithType: FileData.MimeType
+  fullName: libSimba.Net.Models.FileData.MimeType
+  type: Field
+  source:
+    remote:
+      path: src/libSimba.Net/Models/FileData.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: MimeType
+    path: ../libSimba.Net/Models/FileData.cs
+    startLine: 10
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: public string MimeType
+    return:
+      type: System.String
+    content.vb: Public MimeType As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.FileData.Stream
+  commentId: F:libSimba.Net.Models.FileData.Stream
+  id: Stream
+  parent: libSimba.Net.Models.FileData
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: FileData.Stream
+  fullName: libSimba.Net.Models.FileData.Stream
+  type: Field
+  source:
+    remote:
+      path: src/libSimba.Net/Models/FileData.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Stream
+    path: ../libSimba.Net/Models/FileData.cs
+    startLine: 11
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: public Stream Stream
+    return:
+      type: System.IO.Stream
+    content.vb: Public Stream As Stream
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.FileData.#ctor(System.String,System.IO.Stream)
+  commentId: M:libSimba.Net.Models.FileData.#ctor(System.String,System.IO.Stream)
+  id: '#ctor(System.String,System.IO.Stream)'
+  parent: libSimba.Net.Models.FileData
+  langs:
+  - csharp
+  - vb
+  name: FileData(String, Stream)
+  nameWithType: FileData.FileData(String, Stream)
+  fullName: libSimba.Net.Models.FileData.FileData(System.String, System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/libSimba.Net/Models/FileData.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: .ctor
+    path: ../libSimba.Net/Models/FileData.cs
+    startLine: 13
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: public FileData(string name, Stream stream)
+    parameters:
+    - id: name
+      type: System.String
+    - id: stream
+      type: System.IO.Stream
+    content.vb: Public Sub New(name As String, stream As Stream)
+  overload: libSimba.Net.Models.FileData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Models.FileData.#ctor(System.String,System.String,System.IO.Stream)
+  commentId: M:libSimba.Net.Models.FileData.#ctor(System.String,System.String,System.IO.Stream)
+  id: '#ctor(System.String,System.String,System.IO.Stream)'
+  parent: libSimba.Net.Models.FileData
+  langs:
+  - csharp
+  - vb
+  name: FileData(String, String, Stream)
+  nameWithType: FileData.FileData(String, String, Stream)
+  fullName: libSimba.Net.Models.FileData.FileData(System.String, System.String, System.IO.Stream)
+  type: Constructor
+  source:
+    remote:
+      path: src/libSimba.Net/Models/FileData.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: .ctor
+    path: ../libSimba.Net/Models/FileData.cs
+    startLine: 19
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Models
+  syntax:
+    content: public FileData(string name, string mimetype, Stream stream)
+    parameters:
+    - id: name
+      type: System.String
+    - id: mimetype
+      type: System.String
+    - id: stream
+      type: System.IO.Stream
+    content.vb: Public Sub New(name As String, mimetype As String, stream As Stream)
+  overload: libSimba.Net.Models.FileData.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: libSimba.Net.Models
+  commentId: N:libSimba.Net.Models
+  name: libSimba.Net.Models
+  nameWithType: libSimba.Net.Models
+  fullName: libSimba.Net.Models
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: libSimba.Net.Models.FileData.#ctor*
+  commentId: Overload:libSimba.Net.Models.FileData.#ctor
+  name: FileData
+  nameWithType: FileData.FileData
+  fullName: libSimba.Net.Models.FileData.FileData

@@ -1,0 +1,1337 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Wallet.FileWallet
+  commentId: T:libSimba.Net.Wallet.FileWallet
+  id: FileWallet
+  parent: libSimba.Net.Wallet
+  children:
+  - libSimba.Net.Wallet.FileWallet.#ctor(System.String)
+  - libSimba.Net.Wallet.FileWallet.#ctor(System.String,libSimba.Net.Wallet.ISigningConfirmation)
+  - libSimba.Net.Wallet.FileWallet.ChainId
+  - libSimba.Net.Wallet.FileWallet.DeleteWallet
+  - libSimba.Net.Wallet.FileWallet.GenerateWallet(System.String)
+  - libSimba.Net.Wallet.FileWallet.GetAddress
+  - libSimba.Net.Wallet.FileWallet.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  - libSimba.Net.Wallet.FileWallet.TransactionManager
+  - libSimba.Net.Wallet.FileWallet.UnlockWallet(System.String)
+  - libSimba.Net.Wallet.FileWallet.WalletExists
+  - libSimba.Net.Wallet.FileWallet.WalletPath
+  langs:
+  - csharp
+  - vb
+  name: FileWallet
+  nameWithType: FileWallet
+  fullName: libSimba.Net.Wallet.FileWallet
+  type: Class
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: FileWallet
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 18
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nlibsimba WalletBase implementation for Web3 Secret Storage format\nhttps://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition\n"
+  example: []
+  syntax:
+    content: 'public class FileWallet : WalletBase'
+    content.vb: >-
+      Public Class FileWallet
+          Inherits WalletBase
+  inheritance:
+  - System.Object
+  - libSimba.Net.Wallet.WalletBase
+  inheritedMembers:
+  - libSimba.Net.Wallet.WalletBase.RequestConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: libSimba.Net.Wallet.FileWallet.#ctor(System.String)
+  commentId: M:libSimba.Net.Wallet.FileWallet.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: FileWallet(String)
+  nameWithType: FileWallet.FileWallet(String)
+  fullName: libSimba.Net.Wallet.FileWallet.FileWallet(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: .ctor
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 25
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nlibsimba WalletBase implementation for Web3 Secret Storage format\nhttps://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition\n"
+  example: []
+  syntax:
+    content: public FileWallet(string walletPath)
+    parameters:
+    - id: walletPath
+      type: System.String
+      description: Path to the wallet
+    content.vb: Public Sub New(walletPath As String)
+  overload: libSimba.Net.Wallet.FileWallet.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Wallet.FileWallet.#ctor(System.String,libSimba.Net.Wallet.ISigningConfirmation)
+  commentId: M:libSimba.Net.Wallet.FileWallet.#ctor(System.String,libSimba.Net.Wallet.ISigningConfirmation)
+  id: '#ctor(System.String,libSimba.Net.Wallet.ISigningConfirmation)'
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: FileWallet(String, ISigningConfirmation)
+  nameWithType: FileWallet.FileWallet(String, ISigningConfirmation)
+  fullName: libSimba.Net.Wallet.FileWallet.FileWallet(System.String, libSimba.Net.Wallet.ISigningConfirmation)
+  type: Constructor
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: .ctor
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 39
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nlibsimba WalletBase implementation for Web3 Secret Storage format\nhttps://github.com/ethereum/wiki/wiki/Web3-Secret-Storage-Definition\n"
+  example: []
+  syntax:
+    content: public FileWallet(string walletPath, ISigningConfirmation signingConfirmation)
+    parameters:
+    - id: walletPath
+      type: System.String
+      description: Path to the wallet
+    - id: signingConfirmation
+      type: libSimba.Net.Wallet.ISigningConfirmation
+      description: "\nA function reference to call to obtain permission to sign. Accepts an argument of type <xref href=\"libSimba.Net.Models.Transaction.RawPayload\" data-throw-if-not-resolved=\"false\"></xref>,\nand returns a bool.\n"
+    content.vb: Public Sub New(walletPath As String, signingConfirmation As ISigningConfirmation)
+  overload: libSimba.Net.Wallet.FileWallet.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: libSimba.Net.Wallet.FileWallet.WalletPath
+  commentId: P:libSimba.Net.Wallet.FileWallet.WalletPath
+  id: WalletPath
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: WalletPath
+  nameWithType: FileWallet.WalletPath
+  fullName: libSimba.Net.Wallet.FileWallet.WalletPath
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: WalletPath
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 44
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  syntax:
+    content: protected string WalletPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Protected Property WalletPath As String
+  overload: libSimba.Net.Wallet.FileWallet.WalletPath*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: libSimba.Net.Wallet.FileWallet.TransactionManager
+  commentId: P:libSimba.Net.Wallet.FileWallet.TransactionManager
+  id: TransactionManager
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: TransactionManager
+  nameWithType: FileWallet.TransactionManager
+  fullName: libSimba.Net.Wallet.FileWallet.TransactionManager
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: TransactionManager
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 46
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  syntax:
+    content: protected AccountSignerTransactionManager TransactionManager { get; }
+    parameters: []
+    return:
+      type: Nethereum.Web3.Accounts.AccountSignerTransactionManager
+    content.vb: Protected ReadOnly Property TransactionManager As AccountSignerTransactionManager
+  overload: libSimba.Net.Wallet.FileWallet.TransactionManager*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: libSimba.Net.Wallet.FileWallet.ChainId
+  commentId: P:libSimba.Net.Wallet.FileWallet.ChainId
+  id: ChainId
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: ChainId
+  nameWithType: FileWallet.ChainId
+  fullName: libSimba.Net.Wallet.FileWallet.ChainId
+  type: Property
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: ChainId
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 48
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  syntax:
+    content: protected BigInteger? ChainId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Numerics.BigInteger}
+    content.vb: Protected Property ChainId As BigInteger?
+  overload: libSimba.Net.Wallet.FileWallet.ChainId*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: libSimba.Net.Wallet.FileWallet.UnlockWallet(System.String)
+  commentId: M:libSimba.Net.Wallet.FileWallet.UnlockWallet(System.String)
+  id: UnlockWallet(System.String)
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: UnlockWallet(String)
+  nameWithType: FileWallet.UnlockWallet(String)
+  fullName: libSimba.Net.Wallet.FileWallet.UnlockWallet(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: UnlockWallet
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 56
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nUnlock the wallet\n"
+  example: []
+  syntax:
+    content: public override Task UnlockWallet(string passKey)
+    parameters:
+    - id: passKey
+      type: System.String
+      description: The pass key to unlock the wallet
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function UnlockWallet(passKey As String) As Task
+  overridden: libSimba.Net.Wallet.WalletBase.UnlockWallet(System.String)
+  overload: libSimba.Net.Wallet.FileWallet.UnlockWallet*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: libSimba.Net.Exceptions.WalletNotFoundException
+    commentId: T:libSimba.Net.Exceptions.WalletNotFoundException
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Wallet.FileWallet.GenerateWallet(System.String)
+  commentId: M:libSimba.Net.Wallet.FileWallet.GenerateWallet(System.String)
+  id: GenerateWallet(System.String)
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: GenerateWallet(String)
+  nameWithType: FileWallet.GenerateWallet(String)
+  fullName: libSimba.Net.Wallet.FileWallet.GenerateWallet(System.String)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GenerateWallet
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 88
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nGenerate a wallet, and save to the WalletPath.\n"
+  example: []
+  syntax:
+    content: public override Task GenerateWallet(string passKey)
+    parameters:
+    - id: passKey
+      type: System.String
+      description: The pass key to lock the wallet
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function GenerateWallet(passKey As String) As Task
+  overridden: libSimba.Net.Wallet.WalletBase.GenerateWallet(System.String)
+  overload: libSimba.Net.Wallet.FileWallet.GenerateWallet*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Wallet.FileWallet.DeleteWallet
+  commentId: M:libSimba.Net.Wallet.FileWallet.DeleteWallet
+  id: DeleteWallet
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: DeleteWallet()
+  nameWithType: FileWallet.DeleteWallet()
+  fullName: libSimba.Net.Wallet.FileWallet.DeleteWallet()
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: DeleteWallet
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 113
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nDelete the wallet from the file system\n"
+  example: []
+  syntax:
+    content: public override Task DeleteWallet()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function DeleteWallet As Task
+  overridden: libSimba.Net.Wallet.WalletBase.DeleteWallet
+  overload: libSimba.Net.Wallet.FileWallet.DeleteWallet*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Wallet.FileWallet.WalletExists
+  commentId: M:libSimba.Net.Wallet.FileWallet.WalletExists
+  id: WalletExists
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: WalletExists()
+  nameWithType: FileWallet.WalletExists()
+  fullName: libSimba.Net.Wallet.FileWallet.WalletExists()
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: WalletExists
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 123
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nCheck if a wallet exists\n"
+  example: []
+  syntax:
+    content: public override Task<bool> WalletExists()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: does the wallet exist
+    content.vb: Public Overrides Function WalletExists As Task(Of Boolean)
+  overridden: libSimba.Net.Wallet.WalletBase.WalletExists
+  overload: libSimba.Net.Wallet.FileWallet.WalletExists*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Wallet.FileWallet.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  commentId: M:libSimba.Net.Wallet.FileWallet.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  id: Sign(libSimba.Net.Models.Transaction.RawPayload)
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: Sign(RawPayload)
+  nameWithType: FileWallet.Sign(RawPayload)
+  fullName: libSimba.Net.Wallet.FileWallet.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: Sign
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 133
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nSign a transaction payload\n"
+  example: []
+  syntax:
+    content: public override Task<string> Sign(RawPayload rawTxn)
+    parameters:
+    - id: rawTxn
+      type: libSimba.Net.Models.Transaction.RawPayload
+      description: The transaction to sign
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The signed transaction
+    content.vb: Public Overrides Function Sign(rawTxn As RawPayload) As Task(Of String)
+  overridden: libSimba.Net.Wallet.WalletBase.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  overload: libSimba.Net.Wallet.FileWallet.Sign*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: libSimba.Net.Wallet.FileWallet.GetAddress
+  commentId: M:libSimba.Net.Wallet.FileWallet.GetAddress
+  id: GetAddress
+  parent: libSimba.Net.Wallet.FileWallet
+  langs:
+  - csharp
+  - vb
+  name: GetAddress()
+  nameWithType: FileWallet.GetAddress()
+  fullName: libSimba.Net.Wallet.FileWallet.GetAddress()
+  type: Method
+  source:
+    remote:
+      path: src/libSimba.Net/Wallet/FileWallet.cs
+      branch: master
+      repo: git@github.com:ITAMCO/libsimba.net.git
+    id: GetAddress
+    path: ../libSimba.Net/Wallet/FileWallet.cs
+    startLine: 143
+  assemblies:
+  - libSimba.Net
+  namespace: libSimba.Net.Wallet
+  summary: "\nGet the wallets address\n"
+  example: []
+  syntax:
+    content: public override Task<string> GetAddress()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: the wallets address
+    content.vb: Public Overrides Function GetAddress As Task(Of String)
+  overridden: libSimba.Net.Wallet.WalletBase.GetAddress
+  overload: libSimba.Net.Wallet.FileWallet.GetAddress*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: libSimba.Net.Wallet
+  commentId: N:libSimba.Net.Wallet
+  name: libSimba.Net.Wallet
+  nameWithType: libSimba.Net.Wallet
+  fullName: libSimba.Net.Wallet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: libSimba.Net.Wallet.WalletBase
+  commentId: T:libSimba.Net.Wallet.WalletBase
+  parent: libSimba.Net.Wallet
+  name: WalletBase
+  nameWithType: WalletBase
+  fullName: libSimba.Net.Wallet.WalletBase
+- uid: libSimba.Net.Wallet.WalletBase.RequestConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  commentId: M:libSimba.Net.Wallet.WalletBase.RequestConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  parent: libSimba.Net.Wallet.WalletBase
+  name: RequestConfirmation(RawPayload)
+  nameWithType: WalletBase.RequestConfirmation(RawPayload)
+  fullName: libSimba.Net.Wallet.WalletBase.RequestConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.RequestConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+    name: RequestConfirmation
+    nameWithType: WalletBase.RequestConfirmation
+    fullName: libSimba.Net.Wallet.WalletBase.RequestConfirmation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.RawPayload
+    name: RawPayload
+    nameWithType: RawPayload
+    fullName: libSimba.Net.Models.Transaction.RawPayload
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.RequestConfirmation(libSimba.Net.Models.Transaction.RawPayload)
+    name: RequestConfirmation
+    nameWithType: WalletBase.RequestConfirmation
+    fullName: libSimba.Net.Wallet.WalletBase.RequestConfirmation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.RawPayload
+    name: RawPayload
+    nameWithType: RawPayload
+    fullName: libSimba.Net.Models.Transaction.RawPayload
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: libSimba.Net.Wallet.FileWallet.#ctor*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.#ctor
+  name: FileWallet
+  nameWithType: FileWallet.FileWallet
+  fullName: libSimba.Net.Wallet.FileWallet.FileWallet
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: libSimba.Net.Models.Transaction.RawPayload
+  commentId: T:libSimba.Net.Models.Transaction.RawPayload
+  parent: libSimba.Net.Models.Transaction
+  name: RawPayload
+  nameWithType: RawPayload
+  fullName: libSimba.Net.Models.Transaction.RawPayload
+- uid: libSimba.Net.Wallet.ISigningConfirmation
+  commentId: T:libSimba.Net.Wallet.ISigningConfirmation
+  parent: libSimba.Net.Wallet
+  name: ISigningConfirmation
+  nameWithType: ISigningConfirmation
+  fullName: libSimba.Net.Wallet.ISigningConfirmation
+- uid: libSimba.Net.Models.Transaction
+  commentId: N:libSimba.Net.Models.Transaction
+  name: libSimba.Net.Models.Transaction
+  nameWithType: libSimba.Net.Models.Transaction
+  fullName: libSimba.Net.Models.Transaction
+- uid: libSimba.Net.Wallet.FileWallet.WalletPath*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.WalletPath
+  name: WalletPath
+  nameWithType: FileWallet.WalletPath
+  fullName: libSimba.Net.Wallet.FileWallet.WalletPath
+- uid: libSimba.Net.Wallet.FileWallet.TransactionManager*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.TransactionManager
+  name: TransactionManager
+  nameWithType: FileWallet.TransactionManager
+  fullName: libSimba.Net.Wallet.FileWallet.TransactionManager
+- uid: Nethereum.Web3.Accounts.AccountSignerTransactionManager
+  commentId: T:Nethereum.Web3.Accounts.AccountSignerTransactionManager
+  parent: Nethereum.Web3.Accounts
+  isExternal: true
+  name: AccountSignerTransactionManager
+  nameWithType: AccountSignerTransactionManager
+  fullName: Nethereum.Web3.Accounts.AccountSignerTransactionManager
+- uid: Nethereum.Web3.Accounts
+  commentId: N:Nethereum.Web3.Accounts
+  isExternal: true
+  name: Nethereum.Web3.Accounts
+  nameWithType: Nethereum.Web3.Accounts
+  fullName: Nethereum.Web3.Accounts
+- uid: libSimba.Net.Wallet.FileWallet.ChainId*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.ChainId
+  name: ChainId
+  nameWithType: FileWallet.ChainId
+  fullName: libSimba.Net.Wallet.FileWallet.ChainId
+- uid: System.Nullable{System.Numerics.BigInteger}
+  commentId: T:System.Nullable{System.Numerics.BigInteger}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<BigInteger>
+  nameWithType: Nullable<BigInteger>
+  fullName: System.Nullable<System.Numerics.BigInteger>
+  nameWithType.vb: Nullable(Of BigInteger)
+  fullName.vb: System.Nullable(Of System.Numerics.BigInteger)
+  name.vb: Nullable(Of BigInteger)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Numerics.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: System.Numerics.BigInteger
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Numerics.BigInteger
+    name: BigInteger
+    nameWithType: BigInteger
+    fullName: System.Numerics.BigInteger
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: libSimba.Net.Exceptions.WalletNotFoundException
+  commentId: T:libSimba.Net.Exceptions.WalletNotFoundException
+  isExternal: true
+- uid: libSimba.Net.Wallet.WalletBase.UnlockWallet(System.String)
+  commentId: M:libSimba.Net.Wallet.WalletBase.UnlockWallet(System.String)
+  parent: libSimba.Net.Wallet.WalletBase
+  isExternal: true
+  name: UnlockWallet(String)
+  nameWithType: WalletBase.UnlockWallet(String)
+  fullName: libSimba.Net.Wallet.WalletBase.UnlockWallet(System.String)
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.UnlockWallet(System.String)
+    name: UnlockWallet
+    nameWithType: WalletBase.UnlockWallet
+    fullName: libSimba.Net.Wallet.WalletBase.UnlockWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.UnlockWallet(System.String)
+    name: UnlockWallet
+    nameWithType: WalletBase.UnlockWallet
+    fullName: libSimba.Net.Wallet.WalletBase.UnlockWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.FileWallet.UnlockWallet*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.UnlockWallet
+  name: UnlockWallet
+  nameWithType: FileWallet.UnlockWallet
+  fullName: libSimba.Net.Wallet.FileWallet.UnlockWallet
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: libSimba.Net.Wallet.WalletBase.GenerateWallet(System.String)
+  commentId: M:libSimba.Net.Wallet.WalletBase.GenerateWallet(System.String)
+  parent: libSimba.Net.Wallet.WalletBase
+  isExternal: true
+  name: GenerateWallet(String)
+  nameWithType: WalletBase.GenerateWallet(String)
+  fullName: libSimba.Net.Wallet.WalletBase.GenerateWallet(System.String)
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.GenerateWallet(System.String)
+    name: GenerateWallet
+    nameWithType: WalletBase.GenerateWallet
+    fullName: libSimba.Net.Wallet.WalletBase.GenerateWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.GenerateWallet(System.String)
+    name: GenerateWallet
+    nameWithType: WalletBase.GenerateWallet
+    fullName: libSimba.Net.Wallet.WalletBase.GenerateWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.FileWallet.GenerateWallet*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.GenerateWallet
+  name: GenerateWallet
+  nameWithType: FileWallet.GenerateWallet
+  fullName: libSimba.Net.Wallet.FileWallet.GenerateWallet
+- uid: libSimba.Net.Wallet.WalletBase.DeleteWallet
+  commentId: M:libSimba.Net.Wallet.WalletBase.DeleteWallet
+  parent: libSimba.Net.Wallet.WalletBase
+  name: DeleteWallet()
+  nameWithType: WalletBase.DeleteWallet()
+  fullName: libSimba.Net.Wallet.WalletBase.DeleteWallet()
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.DeleteWallet
+    name: DeleteWallet
+    nameWithType: WalletBase.DeleteWallet
+    fullName: libSimba.Net.Wallet.WalletBase.DeleteWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.DeleteWallet
+    name: DeleteWallet
+    nameWithType: WalletBase.DeleteWallet
+    fullName: libSimba.Net.Wallet.WalletBase.DeleteWallet
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.FileWallet.DeleteWallet*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.DeleteWallet
+  name: DeleteWallet
+  nameWithType: FileWallet.DeleteWallet
+  fullName: libSimba.Net.Wallet.FileWallet.DeleteWallet
+- uid: libSimba.Net.Wallet.WalletBase.WalletExists
+  commentId: M:libSimba.Net.Wallet.WalletBase.WalletExists
+  parent: libSimba.Net.Wallet.WalletBase
+  name: WalletExists()
+  nameWithType: WalletBase.WalletExists()
+  fullName: libSimba.Net.Wallet.WalletBase.WalletExists()
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.WalletExists
+    name: WalletExists
+    nameWithType: WalletBase.WalletExists
+    fullName: libSimba.Net.Wallet.WalletBase.WalletExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.WalletExists
+    name: WalletExists
+    nameWithType: WalletBase.WalletExists
+    fullName: libSimba.Net.Wallet.WalletBase.WalletExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.FileWallet.WalletExists*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.WalletExists
+  name: WalletExists
+  nameWithType: FileWallet.WalletExists
+  fullName: libSimba.Net.Wallet.FileWallet.WalletExists
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.WalletBase.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  commentId: M:libSimba.Net.Wallet.WalletBase.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  parent: libSimba.Net.Wallet.WalletBase
+  name: Sign(RawPayload)
+  nameWithType: WalletBase.Sign(RawPayload)
+  fullName: libSimba.Net.Wallet.WalletBase.Sign(libSimba.Net.Models.Transaction.RawPayload)
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.Sign(libSimba.Net.Models.Transaction.RawPayload)
+    name: Sign
+    nameWithType: WalletBase.Sign
+    fullName: libSimba.Net.Wallet.WalletBase.Sign
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.RawPayload
+    name: RawPayload
+    nameWithType: RawPayload
+    fullName: libSimba.Net.Models.Transaction.RawPayload
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.Sign(libSimba.Net.Models.Transaction.RawPayload)
+    name: Sign
+    nameWithType: WalletBase.Sign
+    fullName: libSimba.Net.Wallet.WalletBase.Sign
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: libSimba.Net.Models.Transaction.RawPayload
+    name: RawPayload
+    nameWithType: RawPayload
+    fullName: libSimba.Net.Models.Transaction.RawPayload
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.FileWallet.Sign*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.Sign
+  name: Sign
+  nameWithType: FileWallet.Sign
+  fullName: libSimba.Net.Wallet.FileWallet.Sign
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.WalletBase.GetAddress
+  commentId: M:libSimba.Net.Wallet.WalletBase.GetAddress
+  parent: libSimba.Net.Wallet.WalletBase
+  name: GetAddress()
+  nameWithType: WalletBase.GetAddress()
+  fullName: libSimba.Net.Wallet.WalletBase.GetAddress()
+  spec.csharp:
+  - uid: libSimba.Net.Wallet.WalletBase.GetAddress
+    name: GetAddress
+    nameWithType: WalletBase.GetAddress
+    fullName: libSimba.Net.Wallet.WalletBase.GetAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: libSimba.Net.Wallet.WalletBase.GetAddress
+    name: GetAddress
+    nameWithType: WalletBase.GetAddress
+    fullName: libSimba.Net.Wallet.WalletBase.GetAddress
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: libSimba.Net.Wallet.FileWallet.GetAddress*
+  commentId: Overload:libSimba.Net.Wallet.FileWallet.GetAddress
+  name: GetAddress
+  nameWithType: FileWallet.GetAddress
+  fullName: libSimba.Net.Wallet.FileWallet.GetAddress

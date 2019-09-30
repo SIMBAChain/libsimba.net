@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Models
+  commentId: N:libSimba.Net.Models
+  id: libSimba.Net.Models
+  children:
+  - libSimba.Net.Models.Balance
+  - libSimba.Net.Models.BundleManifest
+  - libSimba.Net.Models.FileData
+  - libSimba.Net.Models.FileManifest
+  - libSimba.Net.Models.Funds
+  - libSimba.Net.Models.PagedResponse`1
+  langs:
+  - csharp
+  - vb
+  name: libSimba.Net.Models
+  nameWithType: libSimba.Net.Models
+  fullName: libSimba.Net.Models
+  type: Namespace
+  assemblies:
+  - libSimba.Net
+references:
+- uid: libSimba.Net.Models.Balance
+  commentId: T:libSimba.Net.Models.Balance
+  name: Balance
+  nameWithType: Balance
+  fullName: libSimba.Net.Models.Balance
+- uid: libSimba.Net.Models.BundleManifest
+  commentId: T:libSimba.Net.Models.BundleManifest
+  name: BundleManifest
+  nameWithType: BundleManifest
+  fullName: libSimba.Net.Models.BundleManifest
+- uid: libSimba.Net.Models.FileData
+  commentId: T:libSimba.Net.Models.FileData
+  name: FileData
+  nameWithType: FileData
+  fullName: libSimba.Net.Models.FileData
+- uid: libSimba.Net.Models.FileManifest
+  commentId: T:libSimba.Net.Models.FileManifest
+  name: FileManifest
+  nameWithType: FileManifest
+  fullName: libSimba.Net.Models.FileManifest
+- uid: libSimba.Net.Models.Funds
+  commentId: T:libSimba.Net.Models.Funds
+  name: Funds
+  nameWithType: Funds
+  fullName: libSimba.Net.Models.Funds
+- uid: libSimba.Net.Models.PagedResponse`1
+  commentId: T:libSimba.Net.Models.PagedResponse`1
+  name: PagedResponse<T>
+  nameWithType: PagedResponse<T>
+  fullName: libSimba.Net.Models.PagedResponse<T>
+  nameWithType.vb: PagedResponse(Of T)
+  fullName.vb: libSimba.Net.Models.PagedResponse(Of T)
+  name.vb: PagedResponse(Of T)
+  spec.csharp:
+  - uid: libSimba.Net.Models.PagedResponse`1
+    name: PagedResponse
+    nameWithType: PagedResponse
+    fullName: libSimba.Net.Models.PagedResponse
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: libSimba.Net.Models.PagedResponse`1
+    name: PagedResponse
+    nameWithType: PagedResponse
+    fullName: libSimba.Net.Models.PagedResponse
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

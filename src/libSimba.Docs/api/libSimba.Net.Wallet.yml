@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: libSimba.Net.Wallet
+  commentId: N:libSimba.Net.Wallet
+  id: libSimba.Net.Wallet
+  children:
+  - libSimba.Net.Wallet.FileWallet
+  - libSimba.Net.Wallet.ISigningConfirmation
+  - libSimba.Net.Wallet.WalletBase
+  langs:
+  - csharp
+  - vb
+  name: libSimba.Net.Wallet
+  nameWithType: libSimba.Net.Wallet
+  fullName: libSimba.Net.Wallet
+  type: Namespace
+  assemblies:
+  - libSimba.Net
+references:
+- uid: libSimba.Net.Wallet.FileWallet
+  commentId: T:libSimba.Net.Wallet.FileWallet
+  name: FileWallet
+  nameWithType: FileWallet
+  fullName: libSimba.Net.Wallet.FileWallet
+- uid: libSimba.Net.Wallet.ISigningConfirmation
+  commentId: T:libSimba.Net.Wallet.ISigningConfirmation
+  parent: libSimba.Net.Wallet
+  name: ISigningConfirmation
+  nameWithType: ISigningConfirmation
+  fullName: libSimba.Net.Wallet.ISigningConfirmation
+- uid: libSimba.Net.Wallet.WalletBase
+  commentId: T:libSimba.Net.Wallet.WalletBase
+  parent: libSimba.Net.Wallet
+  name: WalletBase
+  nameWithType: WalletBase
+  fullName: libSimba.Net.Wallet.WalletBase
+- uid: libSimba.Net.Wallet
+  commentId: N:libSimba.Net.Wallet
+  name: libSimba.Net.Wallet
+  nameWithType: libSimba.Net.Wallet
+  fullName: libSimba.Net.Wallet
