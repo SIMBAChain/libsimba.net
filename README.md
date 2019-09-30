@@ -9,7 +9,7 @@
   <a href="https://github.com/SIMBAChain/libsimba.net/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat" target="_blank" />
   </a>
-  <img alt="azure" src="https://dev.azure.com/SimbaChain/libSimba/_apis/build/status/SIMBAChain.libsimba.net-develop?branchName=develop">
+  <img alt="azure" src="https://dev.azure.com/SimbaChain/libSimba/_apis/build/status/libSimba.net%20-%20Develop?branchName=develop">
 </p>
 
 > libsimba.net is a library simplifying the use of SIMBAChain APIs. We aim to abstract away the various blockchain concepts, reducing the necessary time needed to get to working code.
@@ -17,7 +17,7 @@
 ### [🏠 Homepage](https://github.com/simbachain/libsimba.net)
 ### [📝 Documentation](https://simbachain.github.io/libsimba.net)
 
-## Install
+## Installation
 
 #### .NET CLI
 ```ps
