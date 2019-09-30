@@ -523,7 +523,7 @@ namespace libSimba.Net.Simba
                 if (response.StatusCode != HttpStatusCode.OK)
                 {
                     var responseContent = await response.Content.ReadAsStringAsync();
-                    throw new HttpException(responseContent);
+                    throw new SimbaHttpException(responseContent);
                 }
 
                 //If good, parse out the response to the Transaction object

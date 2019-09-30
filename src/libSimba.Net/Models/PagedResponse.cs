@@ -73,7 +73,7 @@ namespace libSimba.Net.Models
             {
                 return await _simba.DoHttp(getNext, new PagedResponse<T>(getNext.RequestUri.AbsolutePath, _simba), ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetPagedResponseException(ex);
             }
@@ -101,7 +101,7 @@ namespace libSimba.Net.Models
             {
                 return await _simba.DoHttp(getNext, new PagedResponse<T>(getNext.RequestUri.AbsolutePath, _simba), ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetPagedResponseException(ex);
             }

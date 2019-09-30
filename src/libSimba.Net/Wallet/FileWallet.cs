@@ -111,7 +111,9 @@ namespace libSimba.Net.Wallet
         /// <summary>
         ///     Delete the wallet from the file system
         /// </summary>
+#pragma warning disable 1998
         public override async Task DeleteWallet()
+#pragma warning restore 1998
         {
             TransactionManager = null;
             File.Delete(WalletPath);

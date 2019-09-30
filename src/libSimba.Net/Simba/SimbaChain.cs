@@ -55,7 +55,7 @@ namespace libSimba.Net.Simba
                 var swagger = await DoHttp<Swagger>(getSwagger, null, ct);
                 Metadata = swagger.Info.SimbaAttrs;
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new MissingMetadataException(ex);
             }
@@ -122,7 +122,7 @@ namespace libSimba.Net.Simba
             {
                 txn = await DoHttp<Transaction>(generateTxnRequest, null, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GenerateTransactionException(ex);
             }
@@ -154,7 +154,7 @@ namespace libSimba.Net.Simba
             {
                 await DoHttp<Transaction>(signTxnRequest, null, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new SubmitTransactionException(ex);
             }
@@ -380,7 +380,7 @@ namespace libSimba.Net.Simba
                 var pr = GetPagedResponseInstance<Transaction>(getTransactions.RequestUri.AbsolutePath);
                 return await DoHttp(getTransactions, pr, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetTransactionException(ex);
             }
@@ -462,7 +462,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttp<Transaction>(getTransaction, null, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetTransactionException(ex);
             }
@@ -506,7 +506,7 @@ namespace libSimba.Net.Simba
                 var pr = GetPagedResponseInstance<Transaction>(getTransactions.RequestUri.AbsoluteUri);
                 return await DoHttp(getTransactions, pr, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetTransactionException(ex);
             }
@@ -541,7 +541,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttp<BundleManifest>(getManifest, null, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetBundleMetadataException(ex);
             }
@@ -577,7 +577,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttpToStream(getBundleRaw, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetBundleMetadataException(ex);
             }
@@ -615,7 +615,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttpToStream(getBundleFile, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetBundleMetadataException(ex);
             }
@@ -651,7 +651,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttpToStream(getBundleFile, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetBundleMetadataException(ex);
             }
@@ -697,7 +697,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttp<Balance>(getBalance, null, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetBundleMetadataException(ex);
             }
@@ -769,7 +769,7 @@ namespace libSimba.Net.Simba
             {
                 return await DoHttp<Funds>(addFunds, null, ct);
             }
-            catch (HttpException ex)
+            catch (SimbaHttpException ex)
             {
                 throw new GetBundleMetadataException(ex);
             }

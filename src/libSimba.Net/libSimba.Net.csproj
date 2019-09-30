@@ -1,6 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <DefaultFrameworksUnitySupport>netstandard2.0;netcoreapp2.0;net461</DefaultFrameworksUnitySupport>
+    <DefaultFrameworks>netstandard2.0;netcoreapp2.0;net461</DefaultFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net461</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <ApplicationIcon />
     <Win32Resource />
     <Company>SIMBAChain Inc.</Company>
@@ -12,6 +20,9 @@
     <Copyright>SIMBAChain Inc.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <tags>Simbachain Blockchain Ethereum Stellar</tags>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,6 +33,14 @@
     <PackageReference Include="Nethereum.Signer" Version="3.4.0" />
     <PackageReference Include="Nethereum.Web3" Version="3.4.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework.StartsWith('net4'))" >
+    <Reference Include="System.Web" Version="4.0.0.0" />
   </ItemGroup>
 
   <ItemGroup>
