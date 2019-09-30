@@ -17,7 +17,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/BundleManifest.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: BundleManifest
     path: ../libSimba.Net/Models/BundleManifest.cs
     startLine: 8
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/BundleManifest.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Files
     path: ../libSimba.Net/Models/BundleManifest.cs
     startLine: 11

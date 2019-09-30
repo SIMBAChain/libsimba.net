@@ -19,7 +19,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileManifest.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: FileManifest
     path: ../libSimba.Net/Models/FileManifest.cs
     startLine: 8
@@ -76,7 +76,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileManifest.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Name
     path: ../libSimba.Net/Models/FileManifest.cs
     startLine: 11
@@ -123,7 +123,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileManifest.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: MimeType
     path: ../libSimba.Net/Models/FileManifest.cs
     startLine: 13
@@ -170,7 +170,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileManifest.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Size
     path: ../libSimba.Net/Models/FileManifest.cs
     startLine: 15

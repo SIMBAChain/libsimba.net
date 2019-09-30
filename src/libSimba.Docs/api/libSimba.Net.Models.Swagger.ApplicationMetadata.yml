@@ -24,7 +24,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ApplicationMetadata
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 9
@@ -81,7 +81,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Name
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 12
@@ -128,7 +128,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Network
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 14
@@ -175,7 +175,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: NetworkType
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 16
@@ -222,7 +222,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: POA
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 18
@@ -269,7 +269,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: SimbaFaucet
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 20
@@ -316,7 +316,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Type
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 22
@@ -363,7 +363,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Faucet
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 24
@@ -410,7 +410,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/ApplicationMetadata.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Methods
     path: ../libSimba.Net/Models/Swagger/ApplicationMetadata.cs
     startLine: 26

@@ -16,7 +16,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/RawPayload.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: RawPayload
     path: ../libSimba.Net/Models/Transaction/RawPayload.cs
     startLine: 8

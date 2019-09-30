@@ -17,7 +17,7 @@ items:
     remote:
       path: src/libSimba.Net/Exceptions/HttpException.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: HttpException
     path: ../libSimba.Net/Exceptions/HttpException.cs
     startLine: 7
@@ -77,7 +77,7 @@ items:
     remote:
       path: src/libSimba.Net/Exceptions/HttpException.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Exceptions/HttpException.cs
     startLine: 9

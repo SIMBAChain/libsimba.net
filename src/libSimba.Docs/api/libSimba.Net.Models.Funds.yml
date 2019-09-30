@@ -19,7 +19,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Funds.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Funds
     path: ../libSimba.Net/Models/Funds.cs
     startLine: 7
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Funds.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: TransactionID
     path: ../libSimba.Net/Models/Funds.cs
     startLine: 10
@@ -121,7 +121,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Funds.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: POA
     path: ../libSimba.Net/Models/Funds.cs
     startLine: 12
@@ -156,7 +156,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Funds.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: FaucetUrl
     path: ../libSimba.Net/Models/Funds.cs
     startLine: 13

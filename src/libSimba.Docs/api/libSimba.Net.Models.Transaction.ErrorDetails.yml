@@ -18,7 +18,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/ErrorDetails.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ErrorDetails
     path: ../libSimba.Net/Models/Transaction/ErrorDetails.cs
     startLine: 7
@@ -73,7 +73,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/ErrorDetails.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Message
     path: ../libSimba.Net/Models/Transaction/ErrorDetails.cs
     startLine: 10
@@ -120,7 +120,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/ErrorDetails.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Name
     path: ../libSimba.Net/Models/Transaction/ErrorDetails.cs
     startLine: 12

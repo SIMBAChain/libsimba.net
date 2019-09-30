@@ -22,7 +22,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: PagedResponse
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 16
@@ -84,7 +84,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 22
@@ -121,7 +121,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Count
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 32
@@ -170,7 +170,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Data
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 38
@@ -204,7 +204,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CurrentPage
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 43
@@ -238,7 +238,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Next
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 53
@@ -275,7 +275,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/PagedResponse.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Previous
     path: ../libSimba.Net/Models/PagedResponse.cs
     startLine: 81

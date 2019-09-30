@@ -28,7 +28,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Receipt
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 8
@@ -83,7 +83,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: To
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 11
@@ -130,7 +130,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: From
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 13
@@ -177,7 +177,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Logs
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 15
@@ -224,7 +224,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Status
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 17
@@ -271,7 +271,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GasUsed
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 19
@@ -320,7 +320,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: BlockHash
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 22
@@ -367,7 +367,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: LogsBloom
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 24
@@ -414,7 +414,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: BlockNumber
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 26
@@ -463,7 +463,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ContractAddress
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 29
@@ -510,7 +510,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: TransactionHash
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 31
@@ -557,7 +557,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: TransactionIndex
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 33
@@ -606,7 +606,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Receipt.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CumulativeGasUsed
     path: ../libSimba.Net/Models/Transaction/Receipt.cs
     startLine: 36

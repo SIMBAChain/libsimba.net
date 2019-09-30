@@ -35,7 +35,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: SimbaChain
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 23
@@ -102,7 +102,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 30
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Initialize
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 39
@@ -183,7 +183,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CallMethod
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 72
@@ -234,7 +234,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CallMethodWithFile
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 175
@@ -288,7 +288,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CallMethodWithFile
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 222
@@ -342,7 +342,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CallMethodWithFile
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 268
@@ -396,7 +396,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CallMethodWithFile
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 315
@@ -450,7 +450,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetMethodTransactions
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 357
@@ -500,7 +500,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CheckTransactionStatus
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 393
@@ -544,7 +544,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CheckTransactionStatusFromObject
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 404
@@ -585,7 +585,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: CheckTransactionDone
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 432
@@ -626,7 +626,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetTransaction
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 442
@@ -670,7 +670,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetTransactions
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 475
@@ -717,7 +717,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetBundleMetadataForTransaction
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 519
@@ -761,7 +761,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetBundleForTransaction
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 555
@@ -808,7 +808,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetFileFromBundleForTransaction
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 592
@@ -858,7 +858,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetFileFromBundleByNameForTransaction
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 629
@@ -905,7 +905,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetBalance
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 663
@@ -946,7 +946,7 @@ items:
     remote:
       path: src/libSimba.Net/Simba/SimbaChain.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: AddFunds
     path: ../libSimba.Net/Simba/SimbaChain.cs
     startLine: 722

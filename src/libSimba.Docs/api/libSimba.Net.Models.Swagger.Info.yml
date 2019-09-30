@@ -17,7 +17,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/Info.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Info
     path: ../libSimba.Net/Models/Swagger/Info.cs
     startLine: 8
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Swagger/Info.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: SimbaAttrs
     path: ../libSimba.Net/Models/Swagger/Info.cs
     startLine: 11

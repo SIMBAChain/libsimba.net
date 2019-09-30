@@ -21,7 +21,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileData.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: FileData
     path: ../libSimba.Net/Models/FileData.cs
     startLine: 7
@@ -64,7 +64,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileData.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: FileName
     path: ../libSimba.Net/Models/FileData.cs
     startLine: 9
@@ -95,7 +95,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileData.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: MimeType
     path: ../libSimba.Net/Models/FileData.cs
     startLine: 10
@@ -126,7 +126,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileData.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Stream
     path: ../libSimba.Net/Models/FileData.cs
     startLine: 11
@@ -157,7 +157,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileData.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Models/FileData.cs
     startLine: 13
@@ -192,7 +192,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/FileData.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Models/FileData.cs
     startLine: 19

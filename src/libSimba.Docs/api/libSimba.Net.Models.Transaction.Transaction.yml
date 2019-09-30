@@ -37,7 +37,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Transaction
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 7
@@ -94,7 +94,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 10
@@ -141,7 +141,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Submitted
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 12
@@ -188,7 +188,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Payload
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 14
@@ -235,7 +235,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Timestamp
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 16
@@ -282,7 +282,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: SmartContractID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 18
@@ -329,7 +329,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: BytesStoredOnBlockchain
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 20
@@ -376,7 +376,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ApplicationID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 23
@@ -423,7 +423,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: OrganisationID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 25
@@ -470,7 +470,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: BundleId
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 27
@@ -517,7 +517,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: BytesStoredOnDatastore
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 29
@@ -564,7 +564,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: AdapterID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 32
@@ -611,7 +611,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: DataStoreID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 34
@@ -658,7 +658,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: MethodID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 36
@@ -705,7 +705,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ParentID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 38
@@ -752,7 +752,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: IsAsset
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 40
@@ -799,7 +799,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: UserId
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 42
@@ -846,7 +846,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Receipt
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 44
@@ -893,7 +893,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GroupID
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 46
@@ -940,7 +940,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: TransactionHash
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 48
@@ -987,7 +987,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Error
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 50
@@ -1034,7 +1034,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/Transaction.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ErrorDetails
     path: ../libSimba.Net/Models/Transaction/Transaction.cs
     startLine: 52

@@ -27,7 +27,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: FileWallet
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 18
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 25
@@ -110,7 +110,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: .ctor
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 39
@@ -149,7 +149,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: WalletPath
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 44
@@ -184,7 +184,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: TransactionManager
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 46
@@ -219,7 +219,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: ChainId
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 48
@@ -254,7 +254,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: UnlockWallet
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 56
@@ -300,7 +300,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GenerateWallet
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 88
@@ -341,7 +341,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: DeleteWallet
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 113
@@ -378,7 +378,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: WalletExists
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 123
@@ -416,7 +416,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Sign
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 133
@@ -458,7 +458,7 @@ items:
     remote:
       path: src/libSimba.Net/Wallet/FileWallet.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: GetAddress
     path: ../libSimba.Net/Wallet/FileWallet.cs
     startLine: 143

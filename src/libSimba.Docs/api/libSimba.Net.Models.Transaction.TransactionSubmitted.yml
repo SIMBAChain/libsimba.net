@@ -17,7 +17,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/TransactionSubmitted.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: TransactionSubmitted
     path: ../libSimba.Net/Models/Transaction/TransactionSubmitted.cs
     startLine: 7
@@ -74,7 +74,7 @@ items:
     remote:
       path: src/libSimba.Net/Models/Transaction/TransactionSubmitted.cs
       branch: master
-      repo: git@github.com:ITAMCO/libsimba.net.git
+      repo: git@github.com:SIMBAChain/libsimba.net.git
     id: Status
     path: ../libSimba.Net/Models/Transaction/TransactionSubmitted.cs
     startLine: 10
